@@ -13,12 +13,6 @@ import exercise01.RingBufferException;
 public class RingBufferTest {
 
 	@Test
-	public void testRingBuffer() {
-		// TODO
-		// fail("Not yet implemented");
-	}
-
-	@Test
 	public void testIsEmpty_NewRingBuffer_True() {
 		RingBuffer<Integer> ringBuffer = new RingBuffer<>(10);
 		assertEquals("Newly created RingBuffer must be empty.", ringBuffer.isEmpty(), true);
