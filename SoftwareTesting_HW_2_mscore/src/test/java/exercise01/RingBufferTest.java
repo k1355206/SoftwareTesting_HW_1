@@ -93,6 +93,32 @@ public class RingBufferTest {
 		ringBuffer.dequeue();
 		ringBuffer.dequeue();
 	}
+	
+	@Test
+	public void testDequeue_DequeueSingle_CorrectElementRetrieved() throws RingBufferException {
+		RingBuffer<Integer> ringBuffer = new RingBuffer<>(1);
+		int elementEnqueued = 3;
+		ringBuffer.enqueue(elementEnqueued);
+		int elementDequeued = ringBuffer.dequeue();
+		assertEquals("Enqueued element should be retrieved on dequeue.", elementEnqueued, elementDequeued);
+	}
+	
+	@Test
+	public void testDequeue_DequeueMultiple_ElementsRetrievedInCorrectOrder() throws RingBufferException {
+		RingBuffer<Integer> ringBuffer = new RingBuffer<>(3);
+		int elementEnqueued1 = 3;
+		int elementEnqueued2 = 7;
+		int elementEnqueued3 = 2;
+		ringBuffer.enqueue(elementEnqueued1);
+		ringBuffer.enqueue(elementEnqueued2);
+		ringBuffer.enqueue(elementEnqueued3);
+		int elementDequeued1 = ringBuffer.dequeue();
+		assertEquals("First retrieved element not correct", elementEnqueued1, elementDequeued1);
+		int elementDequeued2 = ringBuffer.dequeue();
+		assertEquals("Second retrieved element not correct", elementEnqueued2, elementDequeued2);
+		int elementDequeued3 = ringBuffer.dequeue();
+		assertEquals("Third retrieved element not correct", elementEnqueued3, elementDequeued3);
+	}
 
 	@Test(expected = UnsupportedOperationException.class)
 	public void testIterator_Remove_NotImplemented() {
