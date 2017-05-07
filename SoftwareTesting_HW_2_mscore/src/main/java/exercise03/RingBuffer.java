@@ -16,49 +16,71 @@ import java.util.NoSuchElementException;
 @SuppressWarnings("unchecked")
 
 public class RingBuffer<Item> implements Iterable<Item> {
-    private Item[] a;            // queue elements
-    private int N = 0;           // number of elements on queue
-    private int first = 0;       // index of first element of queue
-    private int last  = 0;       // index of next available slot
+	private Item[] a; // queue elements
+	private int N = 0; // number of elements on queue
+	private int first = 0; // index of first element of queue
+	private int last = 0; // index of next available slot
 
-    // cast needed since no generic array creation in Java
-    public RingBuffer(int capacity) {
-        a = (Item[]) new Object[capacity];
-    }
+	// cast needed since no generic array creation in Java
+	public RingBuffer(int capacity) {
+		a = (Item[]) new Object[capacity];
+	}
 
-    public boolean isEmpty() { return N == 0; }
-    public int size()        { return N;      }
+	public boolean isEmpty() {
+		assert (N == 0) || (first != last) || (N == a.length);
+		return N == 0;
+	}
 
-    public void enqueue(Item item) throws RingBufferException {
-        if (N == a.length) { throw new RingBufferException("Ring buffer overflow"); }
-        a[last] = item;
-        last = (last + 1) % a.length;     // wrap-around
-        N++;
-    }
+	public int size() {
+		return N;
+	}
 
-    // remove the least recently added item - doesn't check for underflow
-    public Item dequeue() throws RingBufferException {
-        if (isEmpty()) { throw new RingBufferException("Ring buffer underflow"); }
-        Item item = a[first];
-        a[first] = null;                  // to help with garbage collection
-        N--;
-        first = (first + 1) % a.length;   // wrap-around
-        return item;
-    }
+	public void enqueue(Item item) throws RingBufferException {
+		if (N == a.length) {
+			throw new RingBufferException("Ring buffer overflow");
+		}
+		a[last] = item;
+		last = (last + 1) % a.length; // wrap-around
+		N++;
+	}
 
-    public Iterator<Item> iterator() { return new RingBufferIterator(); }
+	// remove the least recently added item - doesn't check for underflow
+	public Item dequeue() throws RingBufferException {
+		if (isEmpty()) {
+			throw new RingBufferException("Ring buffer underflow");
+		}
+		Item item = a[first];
+		a[first] = null; // to help with garbage collection
+		N--;
+		first = (first + 1) % a.length; // wrap-around
+		return item;
+	}
 
-    // an iterator, doesn't implement remove() since it's optional
-    public class RingBufferIterator implements Iterator<Item> {
-        private int i = 0;
-        public boolean hasNext()  { return i < N;                               }
-        public void remove()      { throw new UnsupportedOperationException();  }
+	public Iterator<Item> iterator() {
+		return new RingBufferIterator();
+	}
 
-        public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
-            return a[i++];
-        }
-    }
+	// an iterator, doesn't implement remove() since it's optional
+	public class RingBufferIterator implements Iterator<Item> {
+		private int i = 0;
 
+		public boolean hasNext() {
+			assert (0 <= i) || (i <= N);
+			assert (0 <= N);
+			return i < N;
+		}
+
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+
+		public Item next() {
+			if (!hasNext())
+				throw new NoSuchElementException();
+			assert(hasNext());
+			assert(i < a.length);
+			assert(i < N);
+			return a[i++];
+		}
+	}
 }
-
