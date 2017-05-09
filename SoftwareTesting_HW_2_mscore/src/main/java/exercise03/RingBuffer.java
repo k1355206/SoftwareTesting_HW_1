@@ -39,6 +39,7 @@ public class RingBuffer<Item> implements Iterable<Item> {
 		if (N == a.length) {
 			throw new RingBufferException("Ring buffer overflow");
 		}
+		assert (last < a.length) && (last>=0);
 		a[last] = item;
 		last = (last + 1) % a.length; // wrap-around
 		N++;

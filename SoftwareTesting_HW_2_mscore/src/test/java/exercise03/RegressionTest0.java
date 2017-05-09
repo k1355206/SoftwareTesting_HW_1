@@ -3143,6 +3143,43 @@ public class RegressionTest0 {
     java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
     ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
     int i11 = ringBuffer7.size();
+    java.util.Spliterator spliterator12 = ringBuffer7.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+
+  }
+
+  @Test
+  public void test067() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test067"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
+    int i11 = ringBuffer7.size();
     // The following exception was thrown during execution in test generation
     try {
       java.lang.Object obj12 = ringBuffer7.dequeue();
@@ -3173,9 +3210,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test067() throws Throwable {
+  public void test068() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test067"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test068"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3207,9 +3244,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test068() throws Throwable {
+  public void test069() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test068"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test069"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -3246,9 +3283,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test069() throws Throwable {
+  public void test070() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test069"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test070"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3272,9 +3309,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test070() throws Throwable {
+  public void test071() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test070"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test071"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3321,9 +3358,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test071() throws Throwable {
+  public void test072() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test071"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test072"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3365,9 +3402,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test072() throws Throwable {
+  public void test073() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test072"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test073"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3441,9 +3478,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test073() throws Throwable {
+  public void test074() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test073"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test074"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -3560,9 +3597,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test074() throws Throwable {
+  public void test075() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test074"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test075"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3622,9 +3659,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test075() throws Throwable {
+  public void test076() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test075"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test076"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3762,9 +3799,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test076() throws Throwable {
+  public void test077() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test076"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test077"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3824,9 +3861,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test077() throws Throwable {
+  public void test078() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test077"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test078"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -3902,9 +3939,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test078() throws Throwable {
+  public void test079() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test078"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test079"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3939,9 +3976,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test079() throws Throwable {
+  public void test080() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test079"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test080"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -3990,9 +4027,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test080() throws Throwable {
+  public void test081() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test080"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test081"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4060,9 +4097,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test081() throws Throwable {
+  public void test082() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test081"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test082"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4136,9 +4173,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test082() throws Throwable {
+  public void test083() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test082"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test083"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4200,9 +4237,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test083() throws Throwable {
+  public void test084() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test083"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test084"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4228,9 +4265,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test084() throws Throwable {
+  public void test085() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test084"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test085"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4315,9 +4352,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test085() throws Throwable {
+  public void test086() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test085"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test086"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4413,9 +4450,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test086() throws Throwable {
+  public void test087() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test086"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test087"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4522,9 +4559,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test087() throws Throwable {
+  public void test088() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test087"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test088"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4568,9 +4605,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test088() throws Throwable {
+  public void test089() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test088"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test089"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4600,9 +4637,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test089() throws Throwable {
+  public void test090() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test089"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test090"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4657,9 +4694,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test090() throws Throwable {
+  public void test091() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test090"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test091"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4751,9 +4788,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test091() throws Throwable {
+  public void test092() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test091"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test092"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4841,9 +4878,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test092() throws Throwable {
+  public void test093() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test092"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test093"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4924,9 +4961,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test093() throws Throwable {
+  public void test094() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test093"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test094"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -4971,9 +5008,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test094() throws Throwable {
+  public void test095() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test094"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test095"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5002,9 +5039,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test095() throws Throwable {
+  public void test096() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test095"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test096"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5032,9 +5069,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test096() throws Throwable {
+  public void test097() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test096"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test097"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5074,9 +5111,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test097() throws Throwable {
+  public void test098() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test097"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test098"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5171,9 +5208,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test098() throws Throwable {
+  public void test099() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test098"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test099"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -5212,9 +5249,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test099() throws Throwable {
+  public void test100() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test099"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test100"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5239,9 +5276,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test100() throws Throwable {
+  public void test101() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test100"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test101"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5330,9 +5367,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test101() throws Throwable {
+  public void test102() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test101"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test102"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5400,9 +5437,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test102() throws Throwable {
+  public void test103() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test102"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test103"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5447,9 +5484,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test103() throws Throwable {
+  public void test104() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test103"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test104"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
@@ -5499,9 +5536,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test104() throws Throwable {
+  public void test105() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test104"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test105"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -5549,9 +5586,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test105() throws Throwable {
+  public void test106() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test105"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test106"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5583,9 +5620,25 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test106() throws Throwable {
+  public void test107() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test106"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test107"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)(short)100);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+
+  }
+
+  @Test
+  public void test108() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test108"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5657,9 +5710,63 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test107() throws Throwable {
+  public void test109() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test107"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test109"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    boolean b11 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+
+  }
+
+  @Test
+  public void test110() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test110"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -5801,9 +5908,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test108() throws Throwable {
+  public void test111() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test108"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test111"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5855,9 +5962,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test109() throws Throwable {
+  public void test112() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test109"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test112"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -5917,9 +6024,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test110() throws Throwable {
+  public void test113() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test110"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test113"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6001,9 +6108,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test111() throws Throwable {
+  public void test114() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test111"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test114"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6076,9 +6183,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test112() throws Throwable {
+  public void test115() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test112"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test115"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6238,9 +6345,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test113() throws Throwable {
+  public void test116() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test113"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test116"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -6384,9 +6491,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test114() throws Throwable {
+  public void test117() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test114"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test117"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6431,9 +6538,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test115() throws Throwable {
+  public void test118() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test115"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test118"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6496,9 +6603,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test116() throws Throwable {
+  public void test119() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test116"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test119"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6558,9 +6665,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test117() throws Throwable {
+  public void test120() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test117"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test120"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -6608,9 +6715,71 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test118() throws Throwable {
+  public void test121() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test118"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test121"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    int i7 = ringBuffer1.size();
+    boolean b8 = ringBuffer1.isEmpty();
+    boolean b9 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    boolean b13 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator14 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+
+  }
+
+  @Test
+  public void test122() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test122"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6662,9 +6831,134 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test119() throws Throwable {
+  public void test123() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test119"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test123"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    int i3 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer5 = new exercise03.RingBuffer(1);
+    boolean b6 = ringBuffer5.isEmpty();
+    java.util.Spliterator spliterator7 = ringBuffer5.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer5.spliterator();
+    java.util.Iterator iterator9 = ringBuffer5.iterator();
+    java.util.Iterator iterator10 = ringBuffer5.iterator();
+    java.util.Spliterator spliterator11 = ringBuffer5.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i3 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+
+  }
+
+  @Test
+  public void test124() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test124"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
+    java.util.Iterator iterator11 = ringBuffer7.iterator();
+    java.util.Iterator iterator12 = ringBuffer7.iterator();
+    boolean b13 = ringBuffer7.isEmpty();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
+    ringBuffer7.enqueue((java.lang.Object)ringBuffer15);
+    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator22 = ringBuffer21.iterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer21);
+    java.util.Iterator iterator24 = ringBuffer21.iterator();
+    boolean b25 = ringBuffer21.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer21.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer21);
+    int i28 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i28 == 1);
+
+  }
+
+  @Test
+  public void test125() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test125"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6793,9 +7087,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test120() throws Throwable {
+  public void test126() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test120"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test126"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6905,9 +7199,46 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test121() throws Throwable {
+  public void test127() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test121"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test127"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    java.util.Spliterator spliterator2 = ringBuffer1.spliterator();
+    java.util.Iterator iterator3 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator3);
+
+  }
+
+  @Test
+  public void test128() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test128"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+
+  }
+
+  @Test
+  public void test129() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test129"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -6980,9 +7311,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test122() throws Throwable {
+  public void test130() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test122"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test130"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7054,9 +7385,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test123() throws Throwable {
+  public void test131() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test123"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test131"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7111,9 +7442,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test124() throws Throwable {
+  public void test132() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test124"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test132"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7281,9 +7612,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test125() throws Throwable {
+  public void test133() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test125"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test133"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -7367,9 +7698,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test126() throws Throwable {
+  public void test134() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test126"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test134"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7411,9 +7742,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test127() throws Throwable {
+  public void test135() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test127"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test135"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7481,9 +7812,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test128() throws Throwable {
+  public void test136() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test128"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test136"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7619,9 +7950,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test129() throws Throwable {
+  public void test137() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test129"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test137"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -7718,9 +8049,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test130() throws Throwable {
+  public void test138() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test130"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test138"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7776,9 +8107,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test131() throws Throwable {
+  public void test139() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test131"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test139"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7811,9 +8142,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test132() throws Throwable {
+  public void test140() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test132"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test140"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -7872,9 +8203,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test133() throws Throwable {
+  public void test141() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test133"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test141"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -8023,9 +8354,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test134() throws Throwable {
+  public void test142() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test134"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test142"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -8104,9 +8435,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test135() throws Throwable {
+  public void test143() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test135"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test143"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8188,9 +8519,61 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test136() throws Throwable {
+  public void test144() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test136"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test144"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    boolean b13 = ringBuffer1.isEmpty();
+    int i14 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 1);
+
+  }
+
+  @Test
+  public void test145() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test145"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8290,9 +8673,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test137() throws Throwable {
+  public void test146() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test137"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test146"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8402,9 +8785,39 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test138() throws Throwable {
+  public void test147() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test138"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test147"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    int i6 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 0);
+
+  }
+
+  @Test
+  public void test148() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test148"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8481,9 +8894,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test139() throws Throwable {
+  public void test149() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test139"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test149"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8569,9 +8982,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test140() throws Throwable {
+  public void test150() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test140"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test150"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8617,9 +9030,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test141() throws Throwable {
+  public void test151() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test141"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test151"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8671,9 +9084,186 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test142() throws Throwable {
+  public void test152() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test142"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test152"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Iterator iterator19 = ringBuffer10.iterator();
+    boolean b20 = ringBuffer10.isEmpty();
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
+    boolean b23 = ringBuffer22.isEmpty();
+    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
+    java.util.Iterator iterator26 = ringBuffer22.iterator();
+    java.util.Iterator iterator27 = ringBuffer22.iterator();
+    boolean b28 = ringBuffer22.isEmpty();
+    int i29 = ringBuffer22.size();
+    boolean b30 = ringBuffer22.isEmpty();
+    ringBuffer22.enqueue((java.lang.Object)'#');
+    ringBuffer10.enqueue((java.lang.Object)'#');
+    boolean b34 = ringBuffer10.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b23 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b28 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i29 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b30 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b34 == false);
+
+  }
+
+  @Test
+  public void test153() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test153"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
+    int i18 = ringBuffer8.size();
+    boolean b19 = ringBuffer8.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == false);
+
+  }
+
+  @Test
+  public void test154() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test154"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8818,9 +9408,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test143() throws Throwable {
+  public void test155() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test143"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test155"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8852,9 +9442,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test144() throws Throwable {
+  public void test156() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test144"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test156"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8895,9 +9485,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test145() throws Throwable {
+  public void test157() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test145"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test157"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -8960,9 +9550,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test146() throws Throwable {
+  public void test158() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test146"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test158"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9048,9 +9638,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test147() throws Throwable {
+  public void test159() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test147"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test159"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9152,9 +9742,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test148() throws Throwable {
+  public void test160() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test148"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test160"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9223,9 +9813,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test149() throws Throwable {
+  public void test161() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test149"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test161"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9276,9 +9866,77 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test150() throws Throwable {
+  public void test162() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test150"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test162"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer9.spliterator();
+    java.util.Iterator iterator14 = ringBuffer9.iterator();
+    int i15 = ringBuffer9.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    java.util.Iterator iterator17 = ringBuffer1.iterator();
+    boolean b18 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+
+  }
+
+  @Test
+  public void test163() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test163"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9488,9 +10146,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test151() throws Throwable {
+  public void test164() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test151"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test164"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9682,9 +10340,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test152() throws Throwable {
+  public void test165() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test152"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test165"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -9764,9 +10422,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test153() throws Throwable {
+  public void test166() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test153"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test166"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9821,9 +10479,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test154() throws Throwable {
+  public void test167() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test154"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test167"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -9878,9 +10536,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test155() throws Throwable {
+  public void test168() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test155"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test168"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -9950,9 +10608,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test156() throws Throwable {
+  public void test169() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test156"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test169"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10012,9 +10670,89 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test157() throws Throwable {
+  public void test170() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test157"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test170"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Spliterator spliterator19 = ringBuffer10.spliterator();
+    java.util.Iterator iterator20 = ringBuffer10.iterator();
+    java.util.Spliterator spliterator21 = ringBuffer10.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+
+  }
+
+  @Test
+  public void test171() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test171"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10091,9 +10829,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test158() throws Throwable {
+  public void test172() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test158"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test172"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10192,9 +10930,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test159() throws Throwable {
+  public void test173() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test159"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test173"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10257,9 +10995,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test160() throws Throwable {
+  public void test174() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test160"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test174"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10334,9 +11072,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test161() throws Throwable {
+  public void test175() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test161"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test175"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10408,9 +11146,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test162() throws Throwable {
+  public void test176() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test162"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test176"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10484,9 +11222,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test163() throws Throwable {
+  public void test177() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test163"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test177"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10576,9 +11314,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test164() throws Throwable {
+  public void test178() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test164"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test178"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10654,9 +11392,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test165() throws Throwable {
+  public void test179() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test165"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test179"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10741,9 +11479,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test166() throws Throwable {
+  public void test180() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test166"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test180"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10883,9 +11621,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test167() throws Throwable {
+  public void test181() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test167"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test181"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -10940,9 +11678,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test168() throws Throwable {
+  public void test182() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test168"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test182"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11034,9 +11772,63 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test169() throws Throwable {
+  public void test183() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test169"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test183"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    int i7 = ringBuffer1.size();
+    int i8 = ringBuffer1.size();
+    int i9 = ringBuffer1.size();
+    int i10 = ringBuffer1.size();
+    java.util.Iterator iterator11 = ringBuffer1.iterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+
+  }
+
+  @Test
+  public void test184() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test184"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11100,9 +11892,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test170() throws Throwable {
+  public void test185() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test170"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test185"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -11130,9 +11922,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test171() throws Throwable {
+  public void test186() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test171"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test186"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11241,9 +12033,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test172() throws Throwable {
+  public void test187() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test172"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test187"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11325,9 +12117,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test173() throws Throwable {
+  public void test188() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test173"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test188"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -11368,9 +12160,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test174() throws Throwable {
+  public void test189() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test174"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test189"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -11435,9 +12227,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test175() throws Throwable {
+  public void test190() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test175"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test190"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11515,9 +12307,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test176() throws Throwable {
+  public void test191() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test176"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test191"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11550,9 +12342,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test177() throws Throwable {
+  public void test192() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test177"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test192"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11626,9 +12418,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test178() throws Throwable {
+  public void test193() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test178"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test193"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -11668,9 +12460,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test179() throws Throwable {
+  public void test194() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test179"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test194"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11748,9 +12540,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test180() throws Throwable {
+  public void test195() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test180"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test195"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11844,9 +12636,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test181() throws Throwable {
+  public void test196() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test181"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test196"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -11942,9 +12734,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test182() throws Throwable {
+  public void test197() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test182"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test197"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12014,9 +12806,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test183() throws Throwable {
+  public void test198() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test183"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test198"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12048,9 +12840,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test184() throws Throwable {
+  public void test199() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test184"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test199"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12106,9 +12898,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test185() throws Throwable {
+  public void test200() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test185"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test200"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12194,9 +12986,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test186() throws Throwable {
+  public void test201() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test186"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test201"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12268,9 +13060,62 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test187() throws Throwable {
+  public void test202() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test187"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test202"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer8.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
+    java.lang.Object obj12 = ringBuffer8.dequeue();
+    java.util.Spliterator spliterator13 = ringBuffer8.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator13);
+    int i15 = ringBuffer1.size();
+    int i16 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj12 + "' != '" + 'a'+ "'", obj12.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 1);
+
+  }
+
+  @Test
+  public void test203() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test203"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12298,9 +13143,180 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test188() throws Throwable {
+  public void test204() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test188"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test204"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
+    boolean b20 = ringBuffer19.isEmpty();
+    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
+    java.util.Iterator iterator23 = ringBuffer19.iterator();
+    boolean b24 = ringBuffer19.isEmpty();
+    int i25 = ringBuffer19.size();
+    java.util.Iterator iterator26 = ringBuffer19.iterator();
+    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
+    boolean b29 = ringBuffer28.isEmpty();
+    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
+    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
+    java.util.Iterator iterator32 = ringBuffer28.iterator();
+    boolean b33 = ringBuffer28.isEmpty();
+    int i34 = ringBuffer28.size();
+    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
+    ringBuffer19.enqueue((java.lang.Object)ringBuffer28);
+    java.util.Spliterator spliterator37 = ringBuffer28.spliterator();
+    boolean b38 = ringBuffer28.isEmpty();
+    ringBuffer15.enqueue((java.lang.Object)b38);
+    java.util.Spliterator spliterator40 = ringBuffer15.spliterator();
+    exercise03.RingBuffer ringBuffer42 = new exercise03.RingBuffer(1);
+    boolean b43 = ringBuffer42.isEmpty();
+    java.util.Spliterator spliterator44 = ringBuffer42.spliterator();
+    java.util.Spliterator spliterator45 = ringBuffer42.spliterator();
+    java.util.Spliterator spliterator46 = ringBuffer42.spliterator();
+    java.util.Iterator iterator47 = ringBuffer42.iterator();
+    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
+    ringBuffer49.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
+    java.lang.Object obj53 = ringBuffer49.dequeue();
+    java.util.Spliterator spliterator54 = ringBuffer49.spliterator();
+    ringBuffer42.enqueue((java.lang.Object)spliterator54);
+    java.util.Spliterator spliterator56 = ringBuffer42.spliterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer42);
+    java.lang.Object obj58 = ringBuffer42.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b24 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b29 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b33 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i34 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b38 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b43 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator46);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator47);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj53 + "' != '" + 'a'+ "'", obj53.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator54);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator56);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj58);
+
+  }
+
+  @Test
+  public void test205() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test205"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12415,9 +13431,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test189() throws Throwable {
+  public void test206() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test189"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test206"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -12446,9 +13462,109 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test190() throws Throwable {
+  public void test207() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test190"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test207"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
+    java.util.Iterator iterator19 = ringBuffer15.iterator();
+    java.util.Iterator iterator20 = ringBuffer15.iterator();
+    boolean b21 = ringBuffer15.isEmpty();
+    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
+    boolean b24 = ringBuffer23.isEmpty();
+    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
+    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer23);
+    boolean b28 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator29 = ringBuffer15.spliterator();
+    ringBuffer9.enqueue((java.lang.Object)spliterator29);
+    int i31 = ringBuffer9.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b24 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b28 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i31 == 1);
+
+  }
+
+  @Test
+  public void test208() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test208"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12541,9 +13657,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test191() throws Throwable {
+  public void test209() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test191"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test209"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12599,9 +13715,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test192() throws Throwable {
+  public void test210() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test192"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test210"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12669,9 +13785,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test193() throws Throwable {
+  public void test211() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test193"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test211"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12745,9 +13861,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test194() throws Throwable {
+  public void test212() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test194"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test212"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12881,9 +13997,102 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test195() throws Throwable {
+  public void test213() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test195"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test213"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    boolean b10 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
+    ringBuffer12.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
+    int i16 = ringBuffer12.size();
+    java.util.Spliterator spliterator17 = ringBuffer12.spliterator();
+    java.util.Iterator iterator18 = ringBuffer12.iterator();
+    java.util.Spliterator spliterator19 = ringBuffer12.spliterator();
+    java.lang.Object obj20 = ringBuffer12.dequeue();
+    int i21 = ringBuffer12.size();
+    ringBuffer1.enqueue((java.lang.Object)i21);
+    java.util.Spliterator spliterator23 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator24 = ringBuffer1.spliterator();
+    java.util.Iterator iterator25 = ringBuffer1.iterator();
+    boolean b26 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj20 + "' != '" + 'a'+ "'", obj20.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b26 == false);
+
+  }
+
+  @Test
+  public void test214() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test214"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12911,9 +14120,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test196() throws Throwable {
+  public void test215() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test196"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test215"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -12977,9 +14186,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test197() throws Throwable {
+  public void test216() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test197"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test216"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13049,9 +14258,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test198() throws Throwable {
+  public void test217() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test198"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test217"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13126,9 +14335,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test199() throws Throwable {
+  public void test218() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test199"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test218"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -13148,9 +14357,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test200() throws Throwable {
+  public void test219() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test200"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test219"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13250,9 +14459,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test201() throws Throwable {
+  public void test220() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test201"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test220"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13351,9 +14560,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test202() throws Throwable {
+  public void test221() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test202"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test221"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13449,9 +14658,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test203() throws Throwable {
+  public void test222() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test203"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test222"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13601,9 +14810,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test204() throws Throwable {
+  public void test223() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test204"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test223"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13705,9 +14914,57 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test205() throws Throwable {
+  public void test224() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test205"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test224"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    boolean b11 = ringBuffer1.isEmpty();
+    int i12 = ringBuffer1.size();
+    java.util.Spliterator spliterator13 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i12 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+
+  }
+
+  @Test
+  public void test225() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test225"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13750,9 +15007,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test206() throws Throwable {
+  public void test226() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test206"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test226"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13833,9 +15090,31 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test207() throws Throwable {
+  public void test227() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test207"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test227"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
+    java.util.Spliterator spliterator2 = ringBuffer1.spliterator();
+    boolean b3 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator4 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b3 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator4);
+
+  }
+
+  @Test
+  public void test228() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test228"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13886,9 +15165,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test208() throws Throwable {
+  public void test229() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test208"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test229"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -13915,9 +15194,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test209() throws Throwable {
+  public void test230() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test209"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test230"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -14002,9 +15281,43 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test210() throws Throwable {
+  public void test231() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test210"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test231"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    boolean b7 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+
+  }
+
+  @Test
+  public void test232() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test232"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14092,9 +15405,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test211() throws Throwable {
+  public void test233() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test211"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test233"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14213,9 +15526,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test212() throws Throwable {
+  public void test234() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test212"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test234"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14263,9 +15576,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test213() throws Throwable {
+  public void test235() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test213"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test235"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14320,9 +15633,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test214() throws Throwable {
+  public void test236() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test214"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test236"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14359,9 +15672,36 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test215() throws Throwable {
+  public void test237() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test215"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test237"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    boolean b4 = ringBuffer1.isEmpty();
+    boolean b5 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    int i7 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 1);
+
+  }
+
+  @Test
+  public void test238() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test238"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -14423,9 +15763,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test216() throws Throwable {
+  public void test239() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test216"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test239"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14511,9 +15851,48 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test217() throws Throwable {
+  public void test240() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test217"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test240"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    boolean b8 = ringBuffer1.isEmpty();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 1);
+
+  }
+
+  @Test
+  public void test241() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test241"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14538,9 +15917,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test218() throws Throwable {
+  public void test242() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test218"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test242"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14565,9 +15944,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test219() throws Throwable {
+  public void test243() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test219"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test243"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14588,9 +15967,53 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test220() throws Throwable {
+  public void test244() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test220"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test244"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.lang.Object obj8 = null;
+    ringBuffer1.enqueue(obj8);
+    boolean b10 = ringBuffer1.isEmpty();
+    boolean b11 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == false);
+
+  }
+
+  @Test
+  public void test245() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test245"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14788,9 +16211,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test221() throws Throwable {
+  public void test246() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test221"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test246"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -14809,9 +16232,36 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test222() throws Throwable {
+  public void test247() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test222"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test247"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    boolean b4 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+
+  }
+
+  @Test
+  public void test248() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test248"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14912,9 +16362,77 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test223() throws Throwable {
+  public void test249() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test223"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test249"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
+    int i11 = ringBuffer7.size();
+    boolean b12 = ringBuffer7.isEmpty();
+    exercise03.RingBuffer ringBuffer14 = new exercise03.RingBuffer(1);
+    ringBuffer14.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator17 = ringBuffer14.spliterator();
+    int i18 = ringBuffer14.size();
+    java.util.Spliterator spliterator19 = ringBuffer14.spliterator();
+    java.util.Iterator iterator20 = ringBuffer14.iterator();
+    ringBuffer7.enqueue((java.lang.Object)iterator20);
+    int i22 = ringBuffer7.size();
+    java.util.Spliterator spliterator23 = ringBuffer7.spliterator();
+    boolean b24 = ringBuffer7.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i22 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b24 == false);
+
+  }
+
+  @Test
+  public void test250() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test250"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -14978,9 +16496,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test224() throws Throwable {
+  public void test251() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test224"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test251"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15036,9 +16554,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test225() throws Throwable {
+  public void test252() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test225"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test252"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15098,9 +16616,52 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test226() throws Throwable {
+  public void test253() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test226"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test253"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    int i6 = ringBuffer1.size();
+    java.lang.Object obj7 = ringBuffer1.dequeue();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + '#'+ "'", obj7.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+
+  }
+
+  @Test
+  public void test254() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test254"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15186,9 +16747,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test227() throws Throwable {
+  public void test255() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test227"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test255"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15265,9 +16826,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test228() throws Throwable {
+  public void test256() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test228"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test256"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15322,9 +16883,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test229() throws Throwable {
+  public void test257() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test229"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test257"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15356,9 +16917,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test230() throws Throwable {
+  public void test258() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test230"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test258"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15454,9 +17015,40 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test231() throws Throwable {
+  public void test259() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test231"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test259"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    int i7 = ringBuffer1.size();
+    boolean b8 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+
+  }
+
+  @Test
+  public void test260() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test260"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15485,9 +17077,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test232() throws Throwable {
+  public void test261() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test232"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test261"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15557,9 +17149,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test233() throws Throwable {
+  public void test262() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test233"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test262"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -15579,9 +17171,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test234() throws Throwable {
+  public void test263() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test234"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test263"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15647,9 +17239,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test235() throws Throwable {
+  public void test264() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test235"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test264"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15720,9 +17312,43 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test236() throws Throwable {
+  public void test265() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test236"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test265"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    java.lang.Object obj10 = null;
+    ringBuffer8.enqueue(obj10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+
+  }
+
+  @Test
+  public void test266() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test266"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15771,9 +17397,161 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test237() throws Throwable {
+  public void test267() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test237"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test267"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Iterator iterator15 = ringBuffer11.iterator();
+    boolean b16 = ringBuffer11.isEmpty();
+    int i17 = ringBuffer11.size();
+    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
+    ringBuffer3.enqueue((java.lang.Object)spliterator18);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
+    int i21 = ringBuffer3.size();
+    boolean b22 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator23 = ringBuffer3.spliterator();
+    int i24 = ringBuffer3.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i24 == 1);
+
+  }
+
+  @Test
+  public void test268() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test268"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Iterator iterator15 = ringBuffer11.iterator();
+    boolean b16 = ringBuffer11.isEmpty();
+    int i17 = ringBuffer11.size();
+    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
+    ringBuffer3.enqueue((java.lang.Object)spliterator18);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
+    java.util.Iterator iterator21 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+
+  }
+
+  @Test
+  public void test269() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test269"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15832,9 +17610,31 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test238() throws Throwable {
+  public void test270() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test238"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test270"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator3 = ringBuffer1.iterator();
+    boolean b4 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+
+  }
+
+  @Test
+  public void test271() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test271"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15904,9 +17704,40 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test239() throws Throwable {
+  public void test272() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test239"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test272"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    int i6 = ringBuffer1.size();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 1);
+
+  }
+
+  @Test
+  public void test273() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test273"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -15971,9 +17802,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test240() throws Throwable {
+  public void test274() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test240"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test274"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16052,9 +17883,197 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test241() throws Throwable {
+  public void test275() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test241"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test275"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    int i6 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer8.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
+    java.lang.Object obj12 = ringBuffer8.dequeue();
+    java.util.Spliterator spliterator13 = ringBuffer8.spliterator();
+    boolean b14 = ringBuffer8.isEmpty();
+    int i15 = ringBuffer8.size();
+    ringBuffer1.enqueue((java.lang.Object)i15);
+    java.util.Iterator iterator17 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj12 + "' != '" + 'a'+ "'", obj12.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+
+  }
+
+  @Test
+  public void test276() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test276"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Iterator iterator19 = ringBuffer10.iterator();
+    boolean b20 = ringBuffer10.isEmpty();
+    boolean b21 = ringBuffer10.isEmpty();
+    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
+    boolean b24 = ringBuffer23.isEmpty();
+    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
+    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
+    java.util.Iterator iterator27 = ringBuffer23.iterator();
+    boolean b28 = ringBuffer23.isEmpty();
+    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
+    ringBuffer23.enqueue((java.lang.Object)ringBuffer30);
+    exercise03.RingBuffer ringBuffer33 = new exercise03.RingBuffer(1);
+    boolean b34 = ringBuffer33.isEmpty();
+    java.util.Spliterator spliterator35 = ringBuffer33.spliterator();
+    java.util.Spliterator spliterator36 = ringBuffer33.spliterator();
+    java.util.Spliterator spliterator37 = ringBuffer33.spliterator();
+    java.util.Iterator iterator38 = ringBuffer33.iterator();
+    ringBuffer30.enqueue((java.lang.Object)ringBuffer33);
+    ringBuffer10.enqueue((java.lang.Object)ringBuffer30);
+    java.util.Spliterator spliterator41 = ringBuffer10.spliterator();
+    java.util.Iterator iterator42 = ringBuffer10.iterator();
+    java.util.Iterator iterator43 = ringBuffer10.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b24 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b28 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b34 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator38);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator42);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator43);
+
+  }
+
+  @Test
+  public void test277() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test277"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16106,9 +18125,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test242() throws Throwable {
+  public void test278() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test242"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test278"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16156,9 +18175,90 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test243() throws Throwable {
+  public void test279() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test243"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test279"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
+    java.util.Iterator iterator11 = ringBuffer7.iterator();
+    java.util.Iterator iterator12 = ringBuffer7.iterator();
+    boolean b13 = ringBuffer7.isEmpty();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
+    ringBuffer7.enqueue((java.lang.Object)ringBuffer15);
+    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator22 = ringBuffer21.iterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer21);
+    java.util.Iterator iterator24 = ringBuffer21.iterator();
+    boolean b25 = ringBuffer21.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer21.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer21);
+    java.util.Spliterator spliterator28 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+
+  }
+
+  @Test
+  public void test280() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test280"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16222,9 +18322,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test244() throws Throwable {
+  public void test281() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test244"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test281"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
@@ -16247,9 +18347,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test245() throws Throwable {
+  public void test282() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test245"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test282"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -16354,9 +18454,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test246() throws Throwable {
+  public void test283() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test246"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test283"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16442,9 +18542,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test247() throws Throwable {
+  public void test284() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test247"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test284"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16525,9 +18625,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test248() throws Throwable {
+  public void test285() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test248"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test285"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -16560,9 +18660,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test249() throws Throwable {
+  public void test286() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test249"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test286"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16626,9 +18726,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test250() throws Throwable {
+  public void test287() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test250"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test287"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16680,9 +18780,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test251() throws Throwable {
+  public void test288() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test251"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test288"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16719,9 +18819,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test252() throws Throwable {
+  public void test289() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test252"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test289"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -16745,9 +18845,75 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test253() throws Throwable {
+  public void test290() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test253"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test290"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    int i7 = ringBuffer1.size();
+    boolean b8 = ringBuffer1.isEmpty();
+    boolean b9 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    boolean b13 = ringBuffer1.isEmpty();
+    boolean b14 = ringBuffer1.isEmpty();
+    int i15 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 0);
+
+  }
+
+  @Test
+  public void test291() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test291"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16825,9 +18991,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test254() throws Throwable {
+  public void test292() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test254"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test292"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16887,9 +19053,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test255() throws Throwable {
+  public void test293() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test255"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test293"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -16965,9 +19131,37 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test256() throws Throwable {
+  public void test294() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test256"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test294"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)false);
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
+    ringBuffer6.enqueue((java.lang.Object)'a');
+    java.lang.Object obj9 = ringBuffer6.dequeue();
+    java.util.Spliterator spliterator10 = ringBuffer6.spliterator();
+    java.lang.Object obj11 = null;
+    ringBuffer6.enqueue(obj11);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj9 + "' != '" + 'a'+ "'", obj9.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+
+  }
+
+  @Test
+  public void test295() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test295"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(2);
@@ -16986,9 +19180,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test257() throws Throwable {
+  public void test296() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test257"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test296"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17060,9 +19254,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test258() throws Throwable {
+  public void test297() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test258"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test297"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17149,9 +19343,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test259() throws Throwable {
+  public void test298() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test259"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test298"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17257,9 +19451,98 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test260() throws Throwable {
+  public void test299() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test260"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test299"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    boolean b4 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.lang.Object obj6 = ringBuffer1.dequeue();
+    int i7 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj6 + "' != '" + 'a'+ "'", obj6.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+
+  }
+
+  @Test
+  public void test300() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test300"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    java.util.Iterator iterator18 = ringBuffer15.iterator();
+    java.util.Spliterator spliterator19 = ringBuffer15.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+
+  }
+
+  @Test
+  public void test301() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test301"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17305,9 +19588,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test261() throws Throwable {
+  public void test302() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test261"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test302"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17342,9 +19625,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test262() throws Throwable {
+  public void test303() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test262"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test303"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17372,9 +19655,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test263() throws Throwable {
+  public void test304() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test263"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test304"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -17520,9 +19803,99 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test264() throws Throwable {
+  public void test305() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test264"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test305"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    boolean b16 = ringBuffer10.isEmpty();
+    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(1);
+    boolean b19 = ringBuffer18.isEmpty();
+    java.util.Spliterator spliterator20 = ringBuffer18.spliterator();
+    java.util.Spliterator spliterator21 = ringBuffer18.spliterator();
+    ringBuffer10.enqueue((java.lang.Object)ringBuffer18);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer18);
+    int i24 = ringBuffer1.size();
+    java.util.Spliterator spliterator25 = ringBuffer1.spliterator();
+    java.util.Iterator iterator26 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i24 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+
+  }
+
+  @Test
+  public void test306() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test306"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17582,9 +19955,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test265() throws Throwable {
+  public void test307() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test265"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test307"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -17629,9 +20002,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test266() throws Throwable {
+  public void test308() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test266"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test308"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -17904,9 +20277,67 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test267() throws Throwable {
+  public void test309() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test267"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test309"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    int i12 = ringBuffer1.size();
+    boolean b13 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i12 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+
+  }
+
+  @Test
+  public void test310() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test310"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18026,9 +20457,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test268() throws Throwable {
+  public void test311() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test268"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test311"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18106,9 +20537,140 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test269() throws Throwable {
+  public void test312() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test269"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test312"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    boolean b18 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator19 = ringBuffer9.spliterator();
+    boolean b20 = ringBuffer9.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == false);
+
+  }
+
+  @Test
+  public void test313() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test313"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    boolean b9 = ringBuffer8.isEmpty();
+    java.util.Spliterator spliterator10 = ringBuffer8.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
+    java.util.Iterator iterator12 = ringBuffer8.iterator();
+    boolean b13 = ringBuffer8.isEmpty();
+    int i14 = ringBuffer8.size();
+    java.util.Spliterator spliterator15 = ringBuffer8.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer8.spliterator();
+    java.util.Iterator iterator17 = ringBuffer8.iterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    java.util.Spliterator spliterator19 = ringBuffer8.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+
+  }
+
+  @Test
+  public void test314() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test314"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18159,9 +20721,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test270() throws Throwable {
+  public void test315() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test270"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test315"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18183,9 +20745,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test271() throws Throwable {
+  public void test316() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test271"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test316"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18251,9 +20813,157 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test272() throws Throwable {
+  public void test317() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test272"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test317"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer9.spliterator();
+    java.util.Iterator iterator14 = ringBuffer9.iterator();
+    int i15 = ringBuffer9.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    java.util.Iterator iterator17 = ringBuffer9.iterator();
+    int i18 = ringBuffer9.size();
+    java.util.Iterator iterator19 = ringBuffer9.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+
+  }
+
+  @Test
+  public void test318() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test318"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    int i6 = ringBuffer1.size();
+    boolean b7 = ringBuffer1.isEmpty();
+    boolean b8 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    java.util.Iterator iterator11 = ringBuffer10.iterator();
+    java.util.Iterator iterator12 = ringBuffer10.iterator();
+    java.lang.Object obj13 = null;
+    ringBuffer10.enqueue(obj13);
+    ringBuffer1.enqueue(obj13);
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    java.util.Spliterator spliterator18 = ringBuffer17.spliterator();
+    int i19 = ringBuffer17.size();
+    ringBuffer1.enqueue((java.lang.Object)i19);
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
+    ringBuffer22.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
+    int i26 = ringBuffer22.size();
+    java.util.Spliterator spliterator27 = ringBuffer22.spliterator();
+    java.util.Iterator iterator28 = ringBuffer22.iterator();
+    java.util.Iterator iterator29 = ringBuffer22.iterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i26 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+
+  }
+
+  @Test
+  public void test319() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test319"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18355,9 +21065,143 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test273() throws Throwable {
+  public void test320() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test273"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test320"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    int i18 = ringBuffer9.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 1);
+
+  }
+
+  @Test
+  public void test321() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test321"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    int i17 = ringBuffer15.size();
+    ringBuffer1.enqueue((java.lang.Object)i17);
+    int i19 = ringBuffer1.size();
+    boolean b20 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == false);
+
+  }
+
+  @Test
+  public void test322() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test322"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -18426,9 +21270,81 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test274() throws Throwable {
+  public void test323() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test274"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test323"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator15);
+    int i17 = ringBuffer1.size();
+    java.util.Iterator iterator18 = ringBuffer1.iterator();
+    java.util.Iterator iterator19 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+
+  }
+
+  @Test
+  public void test324() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test324"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -18673,9 +21589,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test275() throws Throwable {
+  public void test325() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test275"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test325"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18696,9 +21612,85 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test276() throws Throwable {
+  public void test326() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test276"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test326"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Iterator iterator19 = ringBuffer1.iterator();
+    java.lang.Object obj20 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj20);
+
+  }
+
+  @Test
+  public void test327() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test327"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18794,9 +21786,123 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test277() throws Throwable {
+  public void test328() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test277"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test328"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    int i7 = ringBuffer1.size();
+    java.lang.Object obj8 = ringBuffer1.dequeue();
+    int i9 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    int i17 = ringBuffer11.size();
+    boolean b18 = ringBuffer11.isEmpty();
+    boolean b19 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator20 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator21 = ringBuffer11.spliterator();
+    java.util.Iterator iterator22 = ringBuffer11.iterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(0);
+    java.util.Spliterator spliterator25 = ringBuffer24.spliterator();
+    ringBuffer11.enqueue((java.lang.Object)ringBuffer24);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
+    java.util.Spliterator spliterator28 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj8 + "' != '" + '#'+ "'", obj8.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+
+  }
+
+  @Test
+  public void test329() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test329"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+
+  }
+
+  @Test
+  public void test330() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test330"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18841,9 +21947,146 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test278() throws Throwable {
+  public void test331() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test278"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test331"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    java.lang.Object obj9 = ringBuffer1.dequeue();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj9 + "' != '" + '#'+ "'", obj9.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+
+  }
+
+  @Test
+  public void test332() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test332"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    boolean b8 = ringBuffer1.isEmpty();
+    int i9 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Iterator iterator15 = ringBuffer11.iterator();
+    boolean b16 = ringBuffer11.isEmpty();
+    java.util.Iterator iterator17 = ringBuffer11.iterator();
+    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
+    boolean b20 = ringBuffer19.isEmpty();
+    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator23 = ringBuffer19.spliterator();
+    java.util.Iterator iterator24 = ringBuffer19.iterator();
+    int i25 = ringBuffer19.size();
+    ringBuffer11.enqueue((java.lang.Object)ringBuffer19);
+    java.util.Iterator iterator27 = ringBuffer19.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator27);
+
+  }
+
+  @Test
+  public void test333() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test333"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18887,9 +22130,34 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test279() throws Throwable {
+  public void test334() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test279"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test334"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)false);
+    exercise03.RingBuffer ringBuffer5 = new exercise03.RingBuffer(1);
+    java.util.Iterator iterator6 = ringBuffer5.iterator();
+    java.util.Iterator iterator7 = ringBuffer5.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator7);
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+
+  }
+
+  @Test
+  public void test335() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test335"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -18974,9 +22242,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test280() throws Throwable {
+  public void test336() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test280"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test336"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19030,9 +22298,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test281() throws Throwable {
+  public void test337() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test281"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test337"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19073,9 +22341,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test282() throws Throwable {
+  public void test338() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test282"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test338"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19103,9 +22371,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test283() throws Throwable {
+  public void test339() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test283"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test339"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19257,9 +22525,92 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test284() throws Throwable {
+  public void test340() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test284"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test340"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    boolean b4 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.lang.Object obj7 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    java.util.Iterator iterator13 = ringBuffer9.iterator();
+    boolean b14 = ringBuffer9.isEmpty();
+    java.util.Iterator iterator15 = ringBuffer9.iterator();
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    boolean b18 = ringBuffer17.isEmpty();
+    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
+    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
+    java.util.Iterator iterator21 = ringBuffer17.iterator();
+    java.util.Iterator iterator22 = ringBuffer17.iterator();
+    boolean b23 = ringBuffer17.isEmpty();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer17);
+    java.util.Spliterator spliterator25 = ringBuffer17.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + 'a'+ "'", obj7.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b23 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+
+  }
+
+  @Test
+  public void test341() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test341"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19303,9 +22654,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test285() throws Throwable {
+  public void test342() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test285"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test342"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19360,9 +22711,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test286() throws Throwable {
+  public void test343() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test286"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test343"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19421,9 +22772,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test287() throws Throwable {
+  public void test344() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test287"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test344"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19578,9 +22929,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test288() throws Throwable {
+  public void test345() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test288"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test345"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19654,9 +23005,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test289() throws Throwable {
+  public void test346() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test289"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test346"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19693,9 +23044,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test290() throws Throwable {
+  public void test347() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test290"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test347"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19787,9 +23138,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test291() throws Throwable {
+  public void test348() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test291"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test348"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19813,9 +23164,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test292() throws Throwable {
+  public void test349() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test292"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test349"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19856,9 +23207,692 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test293() throws Throwable {
+  public void test350() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test293"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test350"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer8.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
+    java.lang.Object obj12 = ringBuffer8.dequeue();
+    java.util.Spliterator spliterator13 = ringBuffer8.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator13);
+    java.lang.Object obj15 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    boolean b18 = ringBuffer17.isEmpty();
+    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
+    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
+    java.util.Iterator iterator21 = ringBuffer17.iterator();
+    boolean b22 = ringBuffer17.isEmpty();
+    int i23 = ringBuffer17.size();
+    java.util.Iterator iterator24 = ringBuffer17.iterator();
+    exercise03.RingBuffer ringBuffer26 = new exercise03.RingBuffer(1);
+    boolean b27 = ringBuffer26.isEmpty();
+    java.util.Spliterator spliterator28 = ringBuffer26.spliterator();
+    java.util.Spliterator spliterator29 = ringBuffer26.spliterator();
+    java.util.Iterator iterator30 = ringBuffer26.iterator();
+    boolean b31 = ringBuffer26.isEmpty();
+    int i32 = ringBuffer26.size();
+    java.util.Spliterator spliterator33 = ringBuffer26.spliterator();
+    ringBuffer17.enqueue((java.lang.Object)ringBuffer26);
+    java.util.Iterator iterator35 = ringBuffer26.iterator();
+    boolean b36 = ringBuffer26.isEmpty();
+    boolean b37 = ringBuffer26.isEmpty();
+    exercise03.RingBuffer ringBuffer39 = new exercise03.RingBuffer(1);
+    boolean b40 = ringBuffer39.isEmpty();
+    java.util.Spliterator spliterator41 = ringBuffer39.spliterator();
+    java.util.Spliterator spliterator42 = ringBuffer39.spliterator();
+    java.util.Iterator iterator43 = ringBuffer39.iterator();
+    boolean b44 = ringBuffer39.isEmpty();
+    exercise03.RingBuffer ringBuffer46 = new exercise03.RingBuffer(1);
+    ringBuffer39.enqueue((java.lang.Object)ringBuffer46);
+    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
+    boolean b50 = ringBuffer49.isEmpty();
+    java.util.Spliterator spliterator51 = ringBuffer49.spliterator();
+    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
+    java.util.Spliterator spliterator53 = ringBuffer49.spliterator();
+    java.util.Iterator iterator54 = ringBuffer49.iterator();
+    ringBuffer46.enqueue((java.lang.Object)ringBuffer49);
+    ringBuffer26.enqueue((java.lang.Object)ringBuffer46);
+    java.util.Iterator iterator57 = ringBuffer46.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator57);
+    java.util.Spliterator spliterator59 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj12 + "' != '" + 'a'+ "'", obj12.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i23 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b31 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i32 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b36 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b37 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b40 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator42);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator43);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b44 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b50 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator51);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator53);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator54);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator57);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator59);
+
+  }
+
+  @Test
+  public void test351() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test351"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator15);
+    boolean b17 = ringBuffer1.isEmpty();
+    boolean b18 = ringBuffer1.isEmpty();
+    int i19 = ringBuffer1.size();
+    java.util.Iterator iterator20 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+
+  }
+
+  @Test
+  public void test352() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test352"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+
+  }
+
+  @Test
+  public void test353() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test353"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
+    boolean b20 = ringBuffer19.isEmpty();
+    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
+    java.util.Iterator iterator23 = ringBuffer19.iterator();
+    boolean b24 = ringBuffer19.isEmpty();
+    int i25 = ringBuffer19.size();
+    java.util.Iterator iterator26 = ringBuffer19.iterator();
+    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
+    boolean b29 = ringBuffer28.isEmpty();
+    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
+    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
+    java.util.Iterator iterator32 = ringBuffer28.iterator();
+    boolean b33 = ringBuffer28.isEmpty();
+    int i34 = ringBuffer28.size();
+    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
+    ringBuffer19.enqueue((java.lang.Object)ringBuffer28);
+    java.util.Spliterator spliterator37 = ringBuffer28.spliterator();
+    boolean b38 = ringBuffer28.isEmpty();
+    ringBuffer15.enqueue((java.lang.Object)b38);
+    java.util.Spliterator spliterator40 = ringBuffer15.spliterator();
+    exercise03.RingBuffer ringBuffer42 = new exercise03.RingBuffer(1);
+    boolean b43 = ringBuffer42.isEmpty();
+    java.util.Spliterator spliterator44 = ringBuffer42.spliterator();
+    java.util.Spliterator spliterator45 = ringBuffer42.spliterator();
+    java.util.Spliterator spliterator46 = ringBuffer42.spliterator();
+    java.util.Iterator iterator47 = ringBuffer42.iterator();
+    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
+    ringBuffer49.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
+    java.lang.Object obj53 = ringBuffer49.dequeue();
+    java.util.Spliterator spliterator54 = ringBuffer49.spliterator();
+    ringBuffer42.enqueue((java.lang.Object)spliterator54);
+    java.util.Spliterator spliterator56 = ringBuffer42.spliterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer42);
+    int i58 = ringBuffer42.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b24 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b29 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b33 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i34 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b38 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b43 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator46);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator47);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj53 + "' != '" + 'a'+ "'", obj53.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator54);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator56);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i58 == 1);
+
+  }
+
+  @Test
+  public void test354() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test354"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Spliterator spliterator19 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator20 = ringBuffer10.spliterator();
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
+    ringBuffer22.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
+    int i26 = ringBuffer22.size();
+    boolean b27 = ringBuffer22.isEmpty();
+    java.util.Spliterator spliterator28 = ringBuffer22.spliterator();
+    ringBuffer10.enqueue((java.lang.Object)ringBuffer22);
+    java.lang.Object obj30 = ringBuffer22.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i26 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj30 + "' != '" + 'a'+ "'", obj30.equals('a'));
+
+  }
+
+  @Test
+  public void test355() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test355"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    int i6 = ringBuffer1.size();
+    boolean b7 = ringBuffer1.isEmpty();
+    boolean b8 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    java.util.Iterator iterator11 = ringBuffer10.iterator();
+    java.util.Iterator iterator12 = ringBuffer10.iterator();
+    java.lang.Object obj13 = null;
+    ringBuffer10.enqueue(obj13);
+    ringBuffer1.enqueue(obj13);
+    java.lang.Object obj16 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj16 + "' != '" + '#'+ "'", obj16.equals('#'));
+
+  }
+
+  @Test
+  public void test356() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test356"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    boolean b6 = ringBuffer1.isEmpty();
+    boolean b7 = ringBuffer1.isEmpty();
+    boolean b8 = ringBuffer1.isEmpty();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+
+  }
+
+  @Test
+  public void test357() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test357"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator2 = ringBuffer1.iterator();
+    java.util.Iterator iterator3 = ringBuffer1.iterator();
+    boolean b4 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+
+  }
+
+  @Test
+  public void test358() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test358"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -19895,9 +23929,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test294() throws Throwable {
+  public void test359() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test294"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test359"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -19955,9 +23989,117 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test295() throws Throwable {
+  public void test360() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test295"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test360"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
+    java.util.Iterator iterator11 = ringBuffer7.iterator();
+    java.util.Iterator iterator12 = ringBuffer7.iterator();
+    boolean b13 = ringBuffer7.isEmpty();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
+    ringBuffer7.enqueue((java.lang.Object)ringBuffer15);
+    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator22 = ringBuffer21.iterator();
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer21);
+    java.util.Iterator iterator24 = ringBuffer21.iterator();
+    boolean b25 = ringBuffer21.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer21.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer21);
+    int i28 = ringBuffer21.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i28 == 0);
+
+  }
+
+  @Test
+  public void test361() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test361"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.lang.Object obj6 = ringBuffer1.dequeue();
+    boolean b7 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj6 + "' != '" + '#'+ "'", obj6.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+
+  }
+
+  @Test
+  public void test362() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test362"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20057,9 +24199,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test296() throws Throwable {
+  public void test363() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test296"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test363"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20137,9 +24279,162 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test297() throws Throwable {
+  public void test364() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test297"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test364"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(10);
+    ringBuffer7.enqueue((java.lang.Object)'#');
+    int i10 = ringBuffer7.size();
+    java.util.Iterator iterator11 = ringBuffer7.iterator();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    boolean b14 = ringBuffer13.isEmpty();
+    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
+    ringBuffer7.enqueue((java.lang.Object)ringBuffer13);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
+    java.lang.Object obj18 = ringBuffer1.dequeue();
+    java.util.Iterator iterator19 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+
+  }
+
+  @Test
+  public void test365() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test365"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.lang.Object obj11 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj11);
+
+  }
+
+  @Test
+  public void test366() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test366"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
+    boolean b18 = ringBuffer8.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+
+  }
+
+  @Test
+  public void test367() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test367"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20336,9 +24631,125 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test298() throws Throwable {
+  public void test368() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test298"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test368"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    int i9 = ringBuffer3.size();
+    java.util.Spliterator spliterator10 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer3.spliterator();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
+    java.util.Iterator iterator19 = ringBuffer15.iterator();
+    boolean b20 = ringBuffer15.isEmpty();
+    int i21 = ringBuffer15.size();
+    java.util.Spliterator spliterator22 = ringBuffer15.spliterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    boolean b25 = ringBuffer24.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.util.Iterator iterator29 = ringBuffer24.iterator();
+    ringBuffer15.enqueue((java.lang.Object)iterator29);
+    ringBuffer3.enqueue((java.lang.Object)iterator29);
+    boolean b32 = ringBuffer3.isEmpty();
+    int i33 = ringBuffer3.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
+    java.util.Spliterator spliterator35 = ringBuffer3.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b32 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i33 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+
+  }
+
+  @Test
+  public void test369() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test369"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20398,9 +24809,142 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test299() throws Throwable {
+  public void test370() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test299"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test370"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
+    boolean b16 = ringBuffer15.isEmpty();
+    int i17 = ringBuffer15.size();
+    ringBuffer1.enqueue((java.lang.Object)i17);
+    int i19 = ringBuffer1.size();
+    java.lang.Object obj20 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj20 + "' != '" + 0+ "'", obj20.equals(0));
+
+  }
+
+  @Test
+  public void test371() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test371"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    int i6 = ringBuffer1.size();
+    boolean b7 = ringBuffer1.isEmpty();
+    boolean b8 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    java.util.Iterator iterator11 = ringBuffer10.iterator();
+    java.util.Iterator iterator12 = ringBuffer10.iterator();
+    java.lang.Object obj13 = null;
+    ringBuffer10.enqueue(obj13);
+    ringBuffer1.enqueue(obj13);
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    java.util.Spliterator spliterator18 = ringBuffer17.spliterator();
+    int i19 = ringBuffer17.size();
+    ringBuffer1.enqueue((java.lang.Object)i19);
+    boolean b21 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == false);
+
+  }
+
+  @Test
+  public void test372() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test372"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20462,9 +25006,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test300() throws Throwable {
+  public void test373() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test300"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test373"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20628,9 +25172,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test301() throws Throwable {
+  public void test374() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test301"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test374"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -20687,9 +25231,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test302() throws Throwable {
+  public void test375() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test302"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test375"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20775,9 +25319,109 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test303() throws Throwable {
+  public void test376() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test303"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test376"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
+    boolean b13 = ringBuffer12.isEmpty();
+    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
+    java.util.Iterator iterator16 = ringBuffer12.iterator();
+    java.util.Iterator iterator17 = ringBuffer12.iterator();
+    java.util.Spliterator spliterator18 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator19 = ringBuffer12.spliterator();
+    int i20 = ringBuffer12.size();
+    java.util.Spliterator spliterator21 = ringBuffer12.spliterator();
+    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(10);
+    ringBuffer23.enqueue((java.lang.Object)false);
+    ringBuffer23.enqueue((java.lang.Object)(short)0);
+    java.util.Spliterator spliterator28 = ringBuffer23.spliterator();
+    ringBuffer12.enqueue((java.lang.Object)ringBuffer23);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer23);
+    java.lang.Object obj31 = ringBuffer1.dequeue();
+    java.util.Iterator iterator32 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i20 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+
+  }
+
+  @Test
+  public void test377() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test377"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -20814,9 +25458,171 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test304() throws Throwable {
+  public void test378() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test304"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test378"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    boolean b9 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    ringBuffer11.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    int i15 = ringBuffer11.size();
+    java.util.Spliterator spliterator16 = ringBuffer11.spliterator();
+    java.util.Iterator iterator17 = ringBuffer11.iterator();
+    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
+    java.util.Iterator iterator19 = ringBuffer11.iterator();
+    int i20 = ringBuffer11.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
+    java.lang.Object obj22 = ringBuffer1.dequeue();
+    java.util.Iterator iterator23 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator24 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i20 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+
+  }
+
+  @Test
+  public void test379() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test379"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    boolean b9 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    ringBuffer11.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    int i15 = ringBuffer11.size();
+    java.util.Spliterator spliterator16 = ringBuffer11.spliterator();
+    java.util.Iterator iterator17 = ringBuffer11.iterator();
+    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
+    java.util.Iterator iterator19 = ringBuffer11.iterator();
+    int i20 = ringBuffer11.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
+    int i22 = ringBuffer11.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i20 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i22 == 1);
+
+  }
+
+  @Test
+  public void test380() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test380"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -20910,9 +25716,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test305() throws Throwable {
+  public void test381() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test305"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test381"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21062,9 +25868,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test306() throws Throwable {
+  public void test382() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test306"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test382"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21091,9 +25897,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test307() throws Throwable {
+  public void test383() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test307"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test383"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21165,9 +25971,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test308() throws Throwable {
+  public void test384() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test308"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test384"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21231,9 +26037,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test309() throws Throwable {
+  public void test385() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test309"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test385"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21328,9 +26134,111 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test310() throws Throwable {
+  public void test386() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test310"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test386"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    java.util.Iterator iterator13 = ringBuffer9.iterator();
+    java.util.Iterator iterator14 = ringBuffer9.iterator();
+    boolean b15 = ringBuffer9.isEmpty();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    boolean b17 = ringBuffer1.isEmpty();
+    java.lang.Object obj18 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(1);
+    boolean b21 = ringBuffer20.isEmpty();
+    java.util.Spliterator spliterator22 = ringBuffer20.spliterator();
+    java.util.Spliterator spliterator23 = ringBuffer20.spliterator();
+    java.util.Spliterator spliterator24 = ringBuffer20.spliterator();
+    java.util.Iterator iterator25 = ringBuffer20.iterator();
+    int i26 = ringBuffer20.size();
+    boolean b27 = ringBuffer20.isEmpty();
+    ringBuffer1.enqueue((java.lang.Object)b27);
+    java.util.Iterator iterator29 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i26 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+
+  }
+
+  @Test
+  public void test387() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test387"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21374,9 +26282,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test311() throws Throwable {
+  public void test388() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test311"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test388"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21412,9 +26320,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test312() throws Throwable {
+  public void test389() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test312"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test389"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -21442,9 +26350,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test313() throws Throwable {
+  public void test390() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test313"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test390"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21524,9 +26432,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test314() throws Throwable {
+  public void test391() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test314"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test391"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21585,9 +26493,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test315() throws Throwable {
+  public void test392() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test315"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test392"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
@@ -21633,9 +26541,44 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test316() throws Throwable {
+  public void test393() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test316"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test393"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    int i6 = ringBuffer1.size();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i6 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+
+  }
+
+  @Test
+  public void test394() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test394"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21720,9 +26663,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test317() throws Throwable {
+  public void test395() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test317"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test395"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -21942,9 +26885,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test318() throws Throwable {
+  public void test396() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test318"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test396"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22020,9 +26963,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test319() throws Throwable {
+  public void test397() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test319"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test397"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -22094,9 +27037,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test320() throws Throwable {
+  public void test398() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test320"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test398"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22193,9 +27136,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test321() throws Throwable {
+  public void test399() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test321"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test399"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22255,9 +27198,59 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test322() throws Throwable {
+  public void test400() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test322"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test400"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    int i7 = ringBuffer1.size();
+    int i8 = ringBuffer1.size();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+
+  }
+
+  @Test
+  public void test401() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test401"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22325,9 +27318,228 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test323() throws Throwable {
+  public void test402() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test323"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test402"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    int i7 = ringBuffer1.size();
+    java.lang.Object obj8 = ringBuffer1.dequeue();
+    int i9 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    int i17 = ringBuffer11.size();
+    boolean b18 = ringBuffer11.isEmpty();
+    boolean b19 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator20 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator21 = ringBuffer11.spliterator();
+    java.util.Iterator iterator22 = ringBuffer11.iterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(0);
+    java.util.Spliterator spliterator25 = ringBuffer24.spliterator();
+    ringBuffer11.enqueue((java.lang.Object)ringBuffer24);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
+    exercise03.RingBuffer ringBuffer29 = new exercise03.RingBuffer(1);
+    boolean b30 = ringBuffer29.isEmpty();
+    java.util.Spliterator spliterator31 = ringBuffer29.spliterator();
+    java.util.Spliterator spliterator32 = ringBuffer29.spliterator();
+    java.util.Iterator iterator33 = ringBuffer29.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator33);
+    boolean b35 = ringBuffer1.isEmpty();
+    int i36 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj8 + "' != '" + '#'+ "'", obj8.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b30 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b35 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i36 == 2);
+
+  }
+
+  @Test
+  public void test403() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test403"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    int i7 = ringBuffer1.size();
+    java.lang.Object obj8 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj8 + "' != '" + 'a'+ "'", obj8.equals('a'));
+
+  }
+
+  @Test
+  public void test404() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test404"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    boolean b11 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    ringBuffer13.enqueue((java.lang.Object)'a');
+    java.lang.Object obj16 = ringBuffer13.dequeue();
+    java.util.Spliterator spliterator17 = ringBuffer13.spliterator();
+    java.lang.Object obj18 = null;
+    ringBuffer13.enqueue(obj18);
+    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
+    boolean b21 = ringBuffer13.isEmpty();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
+    java.util.Spliterator spliterator23 = ringBuffer13.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj16 + "' != '" + 'a'+ "'", obj16.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+
+  }
+
+  @Test
+  public void test405() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test405"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22403,9 +27615,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test324() throws Throwable {
+  public void test406() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test324"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test406"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -22438,9 +27650,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test325() throws Throwable {
+  public void test407() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test325"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test407"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22480,9 +27692,103 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test326() throws Throwable {
+  public void test408() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test326"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test408"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator15);
+    java.lang.Object obj17 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
+    boolean b20 = ringBuffer19.isEmpty();
+    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator23 = ringBuffer19.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator23);
+    java.lang.Object obj25 = ringBuffer1.dequeue();
+    boolean b26 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator27 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b26 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+
+  }
+
+  @Test
+  public void test409() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test409"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -22602,9 +27908,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test327() throws Throwable {
+  public void test410() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test327"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test410"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22750,9 +28056,290 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test328() throws Throwable {
+  public void test411() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test328"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test411"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    java.util.Iterator iterator2 = ringBuffer1.iterator();
+    int i3 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i3 == 0);
+
+  }
+
+  @Test
+  public void test412() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test412"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    boolean b16 = ringBuffer10.isEmpty();
+    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(1);
+    boolean b19 = ringBuffer18.isEmpty();
+    java.util.Spliterator spliterator20 = ringBuffer18.spliterator();
+    java.util.Spliterator spliterator21 = ringBuffer18.spliterator();
+    ringBuffer10.enqueue((java.lang.Object)ringBuffer18);
+    java.util.Iterator iterator23 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    int i25 = ringBuffer10.size();
+    boolean b26 = ringBuffer10.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b26 == false);
+
+  }
+
+  @Test
+  public void test413() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test413"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
+    int i11 = ringBuffer7.size();
+    boolean b12 = ringBuffer7.isEmpty();
+    int i13 = ringBuffer7.size();
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    boolean b18 = ringBuffer17.isEmpty();
+    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
+    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
+    java.util.Iterator iterator21 = ringBuffer17.iterator();
+    boolean b22 = ringBuffer17.isEmpty();
+    java.util.Iterator iterator23 = ringBuffer17.iterator();
+    exercise03.RingBuffer ringBuffer25 = new exercise03.RingBuffer(1);
+    boolean b26 = ringBuffer25.isEmpty();
+    java.util.Spliterator spliterator27 = ringBuffer25.spliterator();
+    java.util.Spliterator spliterator28 = ringBuffer25.spliterator();
+    java.util.Iterator iterator29 = ringBuffer25.iterator();
+    boolean b30 = ringBuffer25.isEmpty();
+    int i31 = ringBuffer25.size();
+    java.util.Spliterator spliterator32 = ringBuffer25.spliterator();
+    ringBuffer17.enqueue((java.lang.Object)spliterator32);
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer17);
+    int i35 = ringBuffer17.size();
+    boolean b36 = ringBuffer17.isEmpty();
+    ringBuffer7.enqueue((java.lang.Object)b36);
+    boolean b38 = ringBuffer7.isEmpty();
+    boolean b39 = ringBuffer7.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i13 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b26 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b30 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i31 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i35 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b36 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b38 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b39 == false);
+
+  }
+
+  @Test
+  public void test414() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test414"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    boolean b6 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+
+  }
+
+  @Test
+  public void test415() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test415"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    boolean b6 = ringBuffer1.isEmpty();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    java.lang.Object obj9 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj9 + "' != '" + 'a'+ "'", obj9.equals('a'));
+
+  }
+
+  @Test
+  public void test416() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test416"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -22840,9 +28427,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test329() throws Throwable {
+  public void test417() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test329"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test417"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -22924,9 +28511,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test330() throws Throwable {
+  public void test418() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test330"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test418"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -23054,9 +28641,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test331() throws Throwable {
+  public void test419() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test331"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test419"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23152,9 +28739,89 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test332() throws Throwable {
+  public void test420() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test332"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test420"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    int i9 = ringBuffer1.size();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
+    boolean b13 = ringBuffer12.isEmpty();
+    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer12.spliterator();
+    java.util.Iterator iterator17 = ringBuffer12.iterator();
+    int i18 = ringBuffer12.size();
+    int i19 = ringBuffer12.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer12);
+    boolean b21 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == false);
+
+  }
+
+  @Test
+  public void test421() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test421"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23239,9 +28906,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test333() throws Throwable {
+  public void test422() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test333"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test422"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -23285,9 +28952,333 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test334() throws Throwable {
+  public void test423() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test334"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test423"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    int i14 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer16 = new exercise03.RingBuffer(1);
+    boolean b17 = ringBuffer16.isEmpty();
+    java.util.Spliterator spliterator18 = ringBuffer16.spliterator();
+    java.util.Spliterator spliterator19 = ringBuffer16.spliterator();
+    java.util.Iterator iterator20 = ringBuffer16.iterator();
+    boolean b21 = ringBuffer16.isEmpty();
+    java.util.Iterator iterator22 = ringBuffer16.iterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    boolean b25 = ringBuffer24.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.util.Iterator iterator29 = ringBuffer24.iterator();
+    int i30 = ringBuffer24.size();
+    ringBuffer16.enqueue((java.lang.Object)ringBuffer24);
+    java.util.Iterator iterator32 = ringBuffer16.iterator();
+    java.util.Spliterator spliterator33 = ringBuffer16.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator33);
+    java.lang.Object obj35 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i30 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj35);
+
+  }
+
+  @Test
+  public void test424() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test424"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    boolean b9 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+
+  }
+
+  @Test
+  public void test425() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test425"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
+    java.util.Iterator iterator16 = ringBuffer15.iterator();
+    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
+    java.util.Iterator iterator18 = ringBuffer15.iterator();
+    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
+    boolean b23 = ringBuffer22.isEmpty();
+    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
+    java.util.Iterator iterator26 = ringBuffer22.iterator();
+    boolean b27 = ringBuffer22.isEmpty();
+    int i28 = ringBuffer22.size();
+    java.util.Spliterator spliterator29 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator30 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator31 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator32 = ringBuffer22.spliterator();
+    exercise03.RingBuffer ringBuffer34 = new exercise03.RingBuffer(1);
+    boolean b35 = ringBuffer34.isEmpty();
+    java.util.Spliterator spliterator36 = ringBuffer34.spliterator();
+    java.util.Spliterator spliterator37 = ringBuffer34.spliterator();
+    java.util.Iterator iterator38 = ringBuffer34.iterator();
+    boolean b39 = ringBuffer34.isEmpty();
+    int i40 = ringBuffer34.size();
+    java.util.Spliterator spliterator41 = ringBuffer34.spliterator();
+    exercise03.RingBuffer ringBuffer43 = new exercise03.RingBuffer(1);
+    boolean b44 = ringBuffer43.isEmpty();
+    java.util.Spliterator spliterator45 = ringBuffer43.spliterator();
+    java.util.Spliterator spliterator46 = ringBuffer43.spliterator();
+    java.util.Spliterator spliterator47 = ringBuffer43.spliterator();
+    java.util.Iterator iterator48 = ringBuffer43.iterator();
+    ringBuffer34.enqueue((java.lang.Object)iterator48);
+    ringBuffer22.enqueue((java.lang.Object)iterator48);
+    boolean b51 = ringBuffer22.isEmpty();
+    int i52 = ringBuffer22.size();
+    ringBuffer20.enqueue((java.lang.Object)ringBuffer22);
+    ringBuffer15.enqueue((java.lang.Object)ringBuffer20);
+    boolean b55 = ringBuffer20.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b23 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i28 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b35 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator38);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b39 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i40 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b44 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator46);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator47);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator48);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b51 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i52 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b55 == false);
+
+  }
+
+  @Test
+  public void test426() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test426"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23490,9 +29481,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test335() throws Throwable {
+  public void test427() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test335"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test427"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23750,9 +29741,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test336() throws Throwable {
+  public void test428() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test336"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test428"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23839,9 +29830,31 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test337() throws Throwable {
+  public void test429() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test337"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test429"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
+    java.util.Spliterator spliterator2 = ringBuffer1.spliterator();
+    boolean b3 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b3 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+
+  }
+
+  @Test
+  public void test430() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test430"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -23909,9 +29922,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test338() throws Throwable {
+  public void test431() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test338"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test431"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -23952,9 +29965,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test339() throws Throwable {
+  public void test432() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test339"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test432"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24034,9 +30047,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test340() throws Throwable {
+  public void test433() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test340"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test433"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24139,9 +30152,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test341() throws Throwable {
+  public void test434() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test341"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test434"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
@@ -24168,9 +30181,122 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test342() throws Throwable {
+  public void test435() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test342"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test435"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator10 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
+    boolean b13 = ringBuffer12.isEmpty();
+    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
+    java.util.Iterator iterator16 = ringBuffer12.iterator();
+    java.util.Iterator iterator17 = ringBuffer12.iterator();
+    boolean b18 = ringBuffer12.isEmpty();
+    int i19 = ringBuffer12.size();
+    boolean b20 = ringBuffer12.isEmpty();
+    int i21 = ringBuffer12.size();
+    boolean b22 = ringBuffer12.isEmpty();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    ringBuffer24.enqueue((java.lang.Object)'a');
+    java.lang.Object obj27 = ringBuffer24.dequeue();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.lang.Object obj29 = null;
+    ringBuffer24.enqueue(obj29);
+    java.util.Spliterator spliterator31 = ringBuffer24.spliterator();
+    boolean b32 = ringBuffer24.isEmpty();
+    ringBuffer12.enqueue((java.lang.Object)ringBuffer24);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer24);
+    java.util.Spliterator spliterator35 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj27 + "' != '" + 'a'+ "'", obj27.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b32 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+
+  }
+
+  @Test
+  public void test436() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test436"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24260,9 +30386,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test343() throws Throwable {
+  public void test437() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test343"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test437"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24410,9 +30536,200 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test344() throws Throwable {
+  public void test438() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test344"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test438"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    boolean b14 = ringBuffer13.isEmpty();
+    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
+    java.util.Iterator iterator17 = ringBuffer13.iterator();
+    boolean b18 = ringBuffer13.isEmpty();
+    java.util.Iterator iterator19 = ringBuffer13.iterator();
+    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(1);
+    boolean b22 = ringBuffer21.isEmpty();
+    java.util.Spliterator spliterator23 = ringBuffer21.spliterator();
+    java.util.Spliterator spliterator24 = ringBuffer21.spliterator();
+    java.util.Iterator iterator25 = ringBuffer21.iterator();
+    boolean b26 = ringBuffer21.isEmpty();
+    int i27 = ringBuffer21.size();
+    java.util.Spliterator spliterator28 = ringBuffer21.spliterator();
+    ringBuffer13.enqueue((java.lang.Object)spliterator28);
+    ringBuffer1.enqueue((java.lang.Object)spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b26 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i27 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+
+  }
+
+  @Test
+  public void test439() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test439"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    boolean b8 = ringBuffer1.isEmpty();
+    int i9 = ringBuffer1.size();
+    java.util.Iterator iterator10 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator10);
+
+  }
+
+  @Test
+  public void test440() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test440"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Iterator iterator4 = ringBuffer1.iterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    int i9 = ringBuffer1.size();
+    int i10 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+
+  }
+
+  @Test
+  public void test441() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test441"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24560,9 +30877,497 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test345() throws Throwable {
+  public void test442() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test345"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test442"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    boolean b8 = ringBuffer7.isEmpty();
+    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
+    boolean b11 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    boolean b14 = ringBuffer13.isEmpty();
+    ringBuffer13.enqueue((java.lang.Object)(short)0);
+    int i17 = ringBuffer13.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
+    java.lang.Object obj19 = ringBuffer13.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i17 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj19 + "' != '" + (short)0+ "'", obj19.equals((short)0));
+
+  }
+
+  @Test
+  public void test443() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test443"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    int i14 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer16 = new exercise03.RingBuffer(1);
+    boolean b17 = ringBuffer16.isEmpty();
+    java.util.Spliterator spliterator18 = ringBuffer16.spliterator();
+    java.util.Spliterator spliterator19 = ringBuffer16.spliterator();
+    java.util.Iterator iterator20 = ringBuffer16.iterator();
+    boolean b21 = ringBuffer16.isEmpty();
+    java.util.Iterator iterator22 = ringBuffer16.iterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    boolean b25 = ringBuffer24.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.util.Iterator iterator29 = ringBuffer24.iterator();
+    int i30 = ringBuffer24.size();
+    ringBuffer16.enqueue((java.lang.Object)ringBuffer24);
+    java.util.Iterator iterator32 = ringBuffer16.iterator();
+    java.util.Spliterator spliterator33 = ringBuffer16.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator33);
+    java.util.Spliterator spliterator35 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i30 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator35);
+
+  }
+
+  @Test
+  public void test444() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test444"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    boolean b5 = ringBuffer1.isEmpty();
+    java.lang.Object obj6 = ringBuffer1.dequeue();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj6 + "' != '" + '#'+ "'", obj6.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+
+  }
+
+  @Test
+  public void test445() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test445"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(0);
+    java.util.Iterator iterator2 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator2);
+
+  }
+
+  @Test
+  public void test446() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test446"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Iterator iterator4 = ringBuffer1.iterator();
+    java.lang.Object obj5 = ringBuffer1.dequeue();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    boolean b8 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    boolean b16 = ringBuffer10.isEmpty();
+    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(1);
+    boolean b19 = ringBuffer18.isEmpty();
+    java.util.Spliterator spliterator20 = ringBuffer18.spliterator();
+    java.util.Spliterator spliterator21 = ringBuffer18.spliterator();
+    ringBuffer10.enqueue((java.lang.Object)ringBuffer18);
+    boolean b23 = ringBuffer10.isEmpty();
+    java.util.Iterator iterator24 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator24);
+    java.util.Iterator iterator26 = ringBuffer1.iterator();
+    boolean b27 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b16 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b19 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b23 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == false);
+
+  }
+
+  @Test
+  public void test447() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test447"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
+    java.util.Spliterator spliterator18 = ringBuffer8.spliterator();
+    int i19 = ringBuffer8.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 1);
+
+  }
+
+  @Test
+  public void test448() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test448"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
+    java.util.Iterator iterator15 = ringBuffer10.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator15);
+    boolean b17 = ringBuffer1.isEmpty();
+    boolean b18 = ringBuffer1.isEmpty();
+    int i19 = ringBuffer1.size();
+    java.util.Spliterator spliterator20 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+
+  }
+
+  @Test
+  public void test449() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test449"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
+    java.util.Iterator iterator12 = ringBuffer1.iterator();
+    boolean b13 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+
+  }
+
+  @Test
+  public void test450() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test450"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24605,9 +31410,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test346() throws Throwable {
+  public void test451() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test346"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test451"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24715,9 +31520,147 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test347() throws Throwable {
+  public void test452() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test347"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test452"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Iterator iterator4 = ringBuffer1.iterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+
+  }
+
+  @Test
+  public void test453() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test453"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
+    int i18 = ringBuffer8.size();
+    java.lang.Object obj19 = ringBuffer8.dequeue();
+    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(1);
+    boolean b22 = ringBuffer21.isEmpty();
+    java.util.Spliterator spliterator23 = ringBuffer21.spliterator();
+    java.util.Spliterator spliterator24 = ringBuffer21.spliterator();
+    java.util.Spliterator spliterator25 = ringBuffer21.spliterator();
+    java.util.Iterator iterator26 = ringBuffer21.iterator();
+    int i27 = ringBuffer21.size();
+    boolean b28 = ringBuffer21.isEmpty();
+    boolean b29 = ringBuffer21.isEmpty();
+    int i30 = ringBuffer21.size();
+    ringBuffer8.enqueue((java.lang.Object)i30);
+    int i32 = ringBuffer8.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i27 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b28 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b29 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i30 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i32 == 1);
+
+  }
+
+  @Test
+  public void test454() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test454"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24784,9 +31727,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test348() throws Throwable {
+  public void test455() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test348"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test455"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24851,9 +31794,101 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test349() throws Throwable {
+  public void test456() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test349"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test456"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    boolean b9 = ringBuffer8.isEmpty();
+    java.util.Spliterator spliterator10 = ringBuffer8.spliterator();
+    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
+    java.util.Iterator iterator12 = ringBuffer8.iterator();
+    boolean b13 = ringBuffer8.isEmpty();
+    int i14 = ringBuffer8.size();
+    java.util.Spliterator spliterator15 = ringBuffer8.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer8.spliterator();
+    java.util.Iterator iterator17 = ringBuffer8.iterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    java.util.Iterator iterator19 = ringBuffer1.iterator();
+    java.util.Iterator iterator20 = ringBuffer1.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+
+  }
+
+  @Test
+  public void test457() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test457"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.lang.Object obj4 = ringBuffer1.dequeue();
+    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+
+  }
+
+  @Test
+  public void test458() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test458"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -24930,9 +31965,220 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test350() throws Throwable {
+  public void test459() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test350"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test459"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    java.util.Iterator iterator14 = ringBuffer9.iterator();
+    java.util.Spliterator spliterator15 = ringBuffer9.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+
+  }
+
+  @Test
+  public void test460() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test460"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    java.lang.Object obj9 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Iterator iterator15 = ringBuffer11.iterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    java.util.Spliterator spliterator17 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
+    int i19 = ringBuffer11.size();
+    java.util.Spliterator spliterator20 = ringBuffer11.spliterator();
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(10);
+    ringBuffer22.enqueue((java.lang.Object)false);
+    ringBuffer22.enqueue((java.lang.Object)(short)0);
+    java.util.Spliterator spliterator27 = ringBuffer22.spliterator();
+    ringBuffer11.enqueue((java.lang.Object)ringBuffer22);
+    java.util.Spliterator spliterator29 = ringBuffer11.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj9 + "' != '" + '#'+ "'", obj9.equals('#'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator29);
+
+  }
+
+  @Test
+  public void test461() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test461"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
+    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
+    boolean b12 = ringBuffer11.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
+    java.util.Iterator iterator16 = ringBuffer11.iterator();
+    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
+    int i18 = ringBuffer8.size();
+    java.lang.Object obj19 = ringBuffer8.dequeue();
+    java.util.Iterator iterator20 = ringBuffer8.iterator();
+    int i21 = ringBuffer8.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 0);
+
+  }
+
+  @Test
+  public void test462() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test462"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25020,9 +32266,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test351() throws Throwable {
+  public void test463() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test351"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test463"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -25153,9 +32399,197 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test352() throws Throwable {
+  public void test464() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test352"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test464"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    int i14 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer16 = new exercise03.RingBuffer(1);
+    boolean b17 = ringBuffer16.isEmpty();
+    java.util.Spliterator spliterator18 = ringBuffer16.spliterator();
+    java.util.Spliterator spliterator19 = ringBuffer16.spliterator();
+    java.util.Iterator iterator20 = ringBuffer16.iterator();
+    boolean b21 = ringBuffer16.isEmpty();
+    java.util.Iterator iterator22 = ringBuffer16.iterator();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    boolean b25 = ringBuffer24.isEmpty();
+    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.util.Iterator iterator29 = ringBuffer24.iterator();
+    int i30 = ringBuffer24.size();
+    ringBuffer16.enqueue((java.lang.Object)ringBuffer24);
+    java.util.Iterator iterator32 = ringBuffer16.iterator();
+    java.util.Spliterator spliterator33 = ringBuffer16.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)spliterator33);
+    boolean b35 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i30 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b35 == false);
+
+  }
+
+  @Test
+  public void test465() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test465"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
+    boolean b10 = ringBuffer9.isEmpty();
+    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer9.spliterator();
+    java.util.Iterator iterator14 = ringBuffer9.iterator();
+    int i15 = ringBuffer9.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
+    java.util.Iterator iterator17 = ringBuffer9.iterator();
+    int i18 = ringBuffer9.size();
+    java.util.Spliterator spliterator19 = ringBuffer9.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i18 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+
+  }
+
+  @Test
+  public void test466() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test466"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25257,9 +32691,107 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test353() throws Throwable {
+  public void test467() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test353"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test467"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator13 = ringBuffer1.iterator();
+    int i14 = ringBuffer1.size();
+    java.lang.Object obj15 = ringBuffer1.dequeue();
+    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
+    boolean b18 = ringBuffer17.isEmpty();
+    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
+    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
+    java.util.Iterator iterator21 = ringBuffer17.iterator();
+    java.util.Iterator iterator22 = ringBuffer17.iterator();
+    java.util.Spliterator spliterator23 = ringBuffer17.spliterator();
+    int i24 = ringBuffer17.size();
+    boolean b25 = ringBuffer17.isEmpty();
+    java.util.Iterator iterator26 = ringBuffer17.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator26);
+    java.lang.Object obj28 = ringBuffer1.dequeue();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i14 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i24 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b25 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(obj28);
+
+  }
+
+  @Test
+  public void test468() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test468"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -25300,9 +32832,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test354() throws Throwable {
+  public void test469() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test354"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test469"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25337,9 +32869,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test355() throws Throwable {
+  public void test470() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test355"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test470"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -25393,9 +32925,167 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test356() throws Throwable {
+  public void test471() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test356"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test471"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    int i4 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
+    ringBuffer6.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
+    java.lang.Object obj10 = ringBuffer6.dequeue();
+    java.util.Spliterator spliterator11 = ringBuffer6.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer6);
+    boolean b13 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj10 + "' != '" + 'a'+ "'", obj10.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == false);
+
+  }
+
+  @Test
+  public void test472() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test472"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)false);
+    ringBuffer1.enqueue((java.lang.Object)(short)0);
+    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
+    ringBuffer7.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
+    int i11 = ringBuffer7.size();
+    boolean b12 = ringBuffer7.isEmpty();
+    boolean b13 = ringBuffer7.isEmpty();
+    java.util.Iterator iterator14 = ringBuffer7.iterator();
+    int i15 = ringBuffer7.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
+    java.lang.Object obj17 = ringBuffer1.dequeue();
+    boolean b18 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(10);
+    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
+    boolean b23 = ringBuffer22.isEmpty();
+    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
+    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
+    java.util.Iterator iterator26 = ringBuffer22.iterator();
+    boolean b27 = ringBuffer22.isEmpty();
+    java.util.Iterator iterator28 = ringBuffer22.iterator();
+    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
+    boolean b31 = ringBuffer30.isEmpty();
+    java.util.Spliterator spliterator32 = ringBuffer30.spliterator();
+    java.util.Spliterator spliterator33 = ringBuffer30.spliterator();
+    java.util.Iterator iterator34 = ringBuffer30.iterator();
+    boolean b35 = ringBuffer30.isEmpty();
+    int i36 = ringBuffer30.size();
+    java.util.Spliterator spliterator37 = ringBuffer30.spliterator();
+    ringBuffer22.enqueue((java.lang.Object)spliterator37);
+    ringBuffer20.enqueue((java.lang.Object)ringBuffer22);
+    java.util.Iterator iterator40 = ringBuffer22.iterator();
+    java.util.Iterator iterator41 = ringBuffer22.iterator();
+    java.util.Spliterator spliterator42 = ringBuffer22.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i15 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj17 + "' != '" + false+ "'", obj17.equals(false));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b23 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b27 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b31 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator34);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b35 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i36 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator42);
+
+  }
+
+  @Test
+  public void test473() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test473"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25469,9 +33159,134 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test357() throws Throwable {
+  public void test474() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test357"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test474"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    int i9 = ringBuffer1.size();
+    int i10 = ringBuffer1.size();
+    boolean b11 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    boolean b14 = ringBuffer13.isEmpty();
+    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
+    java.util.Iterator iterator17 = ringBuffer13.iterator();
+    boolean b18 = ringBuffer13.isEmpty();
+    int i19 = ringBuffer13.size();
+    java.lang.Object obj20 = null;
+    ringBuffer13.enqueue(obj20);
+    ringBuffer1.enqueue(obj20);
+    int i23 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i23 == 1);
+
+  }
+
+  @Test
+  public void test475() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test475"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
+    ringBuffer1.enqueue((java.lang.Object)'#');
+    int i4 = ringBuffer1.size();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
+    java.util.Iterator iterator7 = ringBuffer1.iterator();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    java.util.Iterator iterator9 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
+    boolean b11 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i4 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == false);
+
+  }
+
+  @Test
+  public void test476() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test476"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25604,9 +33419,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test358() throws Throwable {
+  public void test477() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test358"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test477"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25665,9 +33480,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test359() throws Throwable {
+  public void test478() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test359"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test478"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25755,9 +33570,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test360() throws Throwable {
+  public void test479() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test360"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test479"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25821,9 +33636,40 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test361() throws Throwable {
+  public void test480() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test361"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test480"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    boolean b6 = ringBuffer1.isEmpty();
+    java.lang.Object obj7 = ringBuffer1.dequeue();
+    int i8 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + 'a'+ "'", obj7.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+
+  }
+
+  @Test
+  public void test481() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test481"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -25999,9 +33845,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test362() throws Throwable {
+  public void test482() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test362"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test482"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26219,9 +34065,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test363() throws Throwable {
+  public void test483() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test363"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test483"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -26409,9 +34255,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test364() throws Throwable {
+  public void test484() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test364"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test484"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26474,9 +34320,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test365() throws Throwable {
+  public void test485() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test365"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test485"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
@@ -26515,9 +34361,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test366() throws Throwable {
+  public void test486() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test366"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test486"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26560,9 +34406,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test367() throws Throwable {
+  public void test487() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test367"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test487"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26629,9 +34475,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test368() throws Throwable {
+  public void test488() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test368"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test488"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26769,9 +34615,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test369() throws Throwable {
+  public void test489() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test369"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test489"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -26975,9 +34821,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test370() throws Throwable {
+  public void test490() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test370"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test490"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -27068,9 +34914,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test371() throws Throwable {
+  public void test491() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test371"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test491"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -27251,9 +35097,210 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test372() throws Throwable {
+  public void test492() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test372"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test492"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    java.util.Iterator iterator10 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
+    boolean b13 = ringBuffer12.isEmpty();
+    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
+    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
+    java.util.Iterator iterator16 = ringBuffer12.iterator();
+    java.util.Iterator iterator17 = ringBuffer12.iterator();
+    boolean b18 = ringBuffer12.isEmpty();
+    int i19 = ringBuffer12.size();
+    boolean b20 = ringBuffer12.isEmpty();
+    int i21 = ringBuffer12.size();
+    boolean b22 = ringBuffer12.isEmpty();
+    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
+    ringBuffer24.enqueue((java.lang.Object)'a');
+    java.lang.Object obj27 = ringBuffer24.dequeue();
+    java.util.Spliterator spliterator28 = ringBuffer24.spliterator();
+    java.lang.Object obj29 = null;
+    ringBuffer24.enqueue(obj29);
+    java.util.Spliterator spliterator31 = ringBuffer24.spliterator();
+    boolean b32 = ringBuffer24.isEmpty();
+    ringBuffer12.enqueue((java.lang.Object)ringBuffer24);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer24);
+    int i35 = ringBuffer1.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b18 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i19 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i21 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b22 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj27 + "' != '" + 'a'+ "'", obj27.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b32 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i35 == 1);
+
+  }
+
+  @Test
+  public void test493() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test493"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    boolean b6 = ringBuffer1.isEmpty();
+    int i7 = ringBuffer1.size();
+    java.util.Iterator iterator8 = ringBuffer1.iterator();
+    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
+    boolean b11 = ringBuffer10.isEmpty();
+    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
+    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
+    java.util.Iterator iterator14 = ringBuffer10.iterator();
+    boolean b15 = ringBuffer10.isEmpty();
+    int i16 = ringBuffer10.size();
+    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
+    java.util.Iterator iterator19 = ringBuffer10.iterator();
+    boolean b20 = ringBuffer10.isEmpty();
+    boolean b21 = ringBuffer10.isEmpty();
+    int i22 = ringBuffer10.size();
+    java.util.Iterator iterator23 = ringBuffer10.iterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i7 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b11 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b15 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i16 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b21 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i22 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator23);
+
+  }
+
+  @Test
+  public void test494() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test494"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -27305,9 +35352,290 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test373() throws Throwable {
+  public void test495() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test373"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test495"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    boolean b7 = ringBuffer1.isEmpty();
+    int i8 = ringBuffer1.size();
+    boolean b9 = ringBuffer1.isEmpty();
+    int i10 = ringBuffer1.size();
+    int i11 = ringBuffer1.size();
+    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
+    boolean b14 = ringBuffer13.isEmpty();
+    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
+    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
+    java.util.Iterator iterator17 = ringBuffer13.iterator();
+    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
+    boolean b20 = ringBuffer19.isEmpty();
+    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
+    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
+    ringBuffer13.enqueue((java.lang.Object)spliterator22);
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
+    int i25 = ringBuffer13.size();
+    int i26 = ringBuffer13.size();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i8 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i10 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b20 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i26 == 1);
+
+  }
+
+  @Test
+  public void test496() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test496"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    boolean b2 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    java.util.Iterator iterator5 = ringBuffer1.iterator();
+    java.util.Iterator iterator6 = ringBuffer1.iterator();
+    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
+    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
+    int i9 = ringBuffer1.size();
+    boolean b10 = ringBuffer1.isEmpty();
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    java.util.Spliterator spliterator13 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b2 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i9 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b10 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator13);
+
+  }
+
+  @Test
+  public void test497() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test497"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
+    ringBuffer1.enqueue((java.lang.Object)'a');
+    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
+    int i5 = ringBuffer1.size();
+    boolean b6 = ringBuffer1.isEmpty();
+    boolean b7 = ringBuffer1.isEmpty();
+    java.lang.Object obj8 = ringBuffer1.dequeue();
+    boolean b9 = ringBuffer1.isEmpty();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i5 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue("'" + obj8 + "' != '" + 'a'+ "'", obj8.equals('a'));
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b9 == true);
+
+  }
+
+  @Test
+  public void test498() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test498"); }
+
+
+    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
+    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
+    boolean b4 = ringBuffer3.isEmpty();
+    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
+    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
+    java.util.Iterator iterator7 = ringBuffer3.iterator();
+    boolean b8 = ringBuffer3.isEmpty();
+    java.util.Iterator iterator9 = ringBuffer3.iterator();
+    ringBuffer1.enqueue((java.lang.Object)iterator9);
+    int i11 = ringBuffer1.size();
+    boolean b12 = ringBuffer1.isEmpty();
+    boolean b13 = ringBuffer1.isEmpty();
+    boolean b14 = ringBuffer1.isEmpty();
+    exercise03.RingBuffer ringBuffer16 = new exercise03.RingBuffer(1);
+    boolean b17 = ringBuffer16.isEmpty();
+    java.util.Spliterator spliterator18 = ringBuffer16.spliterator();
+    java.util.Spliterator spliterator19 = ringBuffer16.spliterator();
+    java.util.Iterator iterator20 = ringBuffer16.iterator();
+    java.util.Iterator iterator21 = ringBuffer16.iterator();
+    java.util.Spliterator spliterator22 = ringBuffer16.spliterator();
+    java.util.Spliterator spliterator23 = ringBuffer16.spliterator();
+    int i24 = ringBuffer16.size();
+    int i25 = ringBuffer16.size();
+    int i26 = ringBuffer16.size();
+    ringBuffer1.enqueue((java.lang.Object)ringBuffer16);
+    java.util.Spliterator spliterator28 = ringBuffer1.spliterator();
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b4 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b8 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i11 == 1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b13 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b14 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(b17 == true);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(iterator21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i24 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i25 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertTrue(i26 == 0);
+    
+    // Regression assertion (captures the current behavior of the code)
+    org.junit.Assert.assertNotNull(spliterator28);
+
+  }
+
+  @Test
+  public void test499() throws Throwable {
+
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test499"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -27338,9 +35666,9 @@ public class RegressionTest0 {
   }
 
   @Test
-  public void test374() throws Throwable {
+  public void test500() throws Throwable {
 
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test374"); }
+    if (debug) { System.out.format("%n%s%n","RegressionTest0.test500"); }
 
 
     exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
@@ -27397,10645 +35725,6 @@ public class RegressionTest0 {
     
     // Regression assertion (captures the current behavior of the code)
     org.junit.Assert.assertNotNull(iterator14);
-
-  }
-
-  @Test
-  public void test375() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test375"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
-    boolean b13 = ringBuffer12.isEmpty();
-    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
-    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer12.spliterator();
-    java.util.Iterator iterator17 = ringBuffer12.iterator();
-    int i18 = ringBuffer12.size();
-    int i19 = ringBuffer12.size();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer12);
-    java.util.Iterator iterator21 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator27 = ringBuffer23.spliterator();
-    java.util.Iterator iterator28 = ringBuffer23.iterator();
-    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
-    ringBuffer30.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator33 = ringBuffer30.spliterator();
-    java.lang.Object obj34 = ringBuffer30.dequeue();
-    java.util.Spliterator spliterator35 = ringBuffer30.spliterator();
-    ringBuffer23.enqueue((java.lang.Object)spliterator35);
-    java.util.Spliterator spliterator37 = ringBuffer23.spliterator();
-    int i38 = ringBuffer23.size();
-    java.lang.Object obj39 = ringBuffer23.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue(obj39);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj34 + "' != '" + 'a'+ "'", obj34.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj39);
-
-  }
-
-  @Test
-  public void test376() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test376"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    int i2 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer4 = new exercise03.RingBuffer(1);
-    boolean b5 = ringBuffer4.isEmpty();
-    java.util.Spliterator spliterator6 = ringBuffer4.spliterator();
-    java.util.Spliterator spliterator7 = ringBuffer4.spliterator();
-    java.util.Iterator iterator8 = ringBuffer4.iterator();
-    boolean b9 = ringBuffer4.isEmpty();
-    java.util.Iterator iterator10 = ringBuffer4.iterator();
-    exercise03.RingBuffer ringBuffer12 = new exercise03.RingBuffer(1);
-    boolean b13 = ringBuffer12.isEmpty();
-    java.util.Spliterator spliterator14 = ringBuffer12.spliterator();
-    java.util.Spliterator spliterator15 = ringBuffer12.spliterator();
-    java.util.Iterator iterator16 = ringBuffer12.iterator();
-    java.util.Iterator iterator17 = ringBuffer12.iterator();
-    boolean b18 = ringBuffer12.isEmpty();
-    ringBuffer4.enqueue((java.lang.Object)ringBuffer12);
-    boolean b20 = ringBuffer4.isEmpty();
-    boolean b21 = ringBuffer4.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer4);
-    java.util.function.Consumer consumer23 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer23);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i2 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b5 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b9 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == false);
-
-  }
-
-  @Test
-  public void test377() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test377"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator9);
-    boolean b11 = ringBuffer1.isEmpty();
-    int i12 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer14 = new exercise03.RingBuffer(1);
-    boolean b15 = ringBuffer14.isEmpty();
-    java.util.Spliterator spliterator16 = ringBuffer14.spliterator();
-    java.util.Spliterator spliterator17 = ringBuffer14.spliterator();
-    java.util.Iterator iterator18 = ringBuffer14.iterator();
-    boolean b19 = ringBuffer14.isEmpty();
-    int i20 = ringBuffer14.size();
-    java.util.Spliterator spliterator21 = ringBuffer14.spliterator();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator27 = ringBuffer23.spliterator();
-    java.util.Iterator iterator28 = ringBuffer23.iterator();
-    ringBuffer14.enqueue((java.lang.Object)iterator28);
-    java.lang.Object obj30 = ringBuffer14.dequeue();
-    exercise03.RingBuffer ringBuffer32 = new exercise03.RingBuffer(1);
-    boolean b33 = ringBuffer32.isEmpty();
-    java.util.Spliterator spliterator34 = ringBuffer32.spliterator();
-    java.util.Spliterator spliterator35 = ringBuffer32.spliterator();
-    java.util.Spliterator spliterator36 = ringBuffer32.spliterator();
-    ringBuffer14.enqueue((java.lang.Object)spliterator36);
-    java.lang.Object obj38 = ringBuffer14.dequeue();
-    boolean b39 = ringBuffer14.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer14);
-    java.lang.Object obj41 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer42 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer42);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b39 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj41);
-
-  }
-
-  @Test
-  public void test378() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test378"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    java.util.Spliterator spliterator16 = ringBuffer10.spliterator();
-    int i17 = ringBuffer10.size();
-    ringBuffer1.enqueue((java.lang.Object)i17);
-    java.util.Iterator iterator19 = ringBuffer1.iterator();
-    int i20 = ringBuffer1.size();
-    java.lang.Object obj21 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer22 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer22);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj21 + "' != '" + 0+ "'", obj21.equals(0));
-
-  }
-
-  @Test
-  public void test379() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test379"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)(short)0);
-    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
-    boolean b7 = ringBuffer6.isEmpty();
-    java.util.Spliterator spliterator8 = ringBuffer6.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
-    java.util.Iterator iterator10 = ringBuffer6.iterator();
-    boolean b11 = ringBuffer6.isEmpty();
-    int i12 = ringBuffer6.size();
-    java.util.Iterator iterator13 = ringBuffer6.iterator();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    boolean b16 = ringBuffer15.isEmpty();
-    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
-    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
-    java.util.Iterator iterator19 = ringBuffer15.iterator();
-    java.util.Iterator iterator20 = ringBuffer15.iterator();
-    boolean b21 = ringBuffer15.isEmpty();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer23);
-    ringBuffer6.enqueue((java.lang.Object)ringBuffer23);
-    int i29 = ringBuffer6.size();
-    java.util.Iterator iterator30 = ringBuffer6.iterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer6);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i29 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator30);
-
-  }
-
-  @Test
-  public void test380() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test380"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    boolean b10 = ringBuffer8.isEmpty();
-    java.util.function.Consumer consumer11 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer8.forEach(consumer11);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-
-  }
-
-  @Test
-  public void test381() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test381"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    int i4 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
-    ringBuffer6.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
-    java.lang.Object obj10 = ringBuffer6.dequeue();
-    java.util.Spliterator spliterator11 = ringBuffer6.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer6);
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer6.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj10 + "' != '" + 'a'+ "'", obj10.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-
-  }
-
-  @Test
-  public void test382() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test382"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    int i8 = ringBuffer1.size();
-    boolean b9 = ringBuffer1.isEmpty();
-    int i10 = ringBuffer1.size();
-    int i11 = ringBuffer1.size();
-    int i12 = ringBuffer1.size();
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b9 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-
-  }
-
-  @Test
-  public void test383() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test383"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    boolean b8 = ringBuffer7.isEmpty();
-    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator10);
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    int i13 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    boolean b16 = ringBuffer15.isEmpty();
-    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
-    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
-    java.util.Iterator iterator19 = ringBuffer15.iterator();
-    java.util.Iterator iterator20 = ringBuffer15.iterator();
-    java.util.Spliterator spliterator21 = ringBuffer15.spliterator();
-    java.util.Iterator iterator22 = ringBuffer15.iterator();
-    boolean b23 = ringBuffer15.isEmpty();
-    exercise03.RingBuffer ringBuffer25 = new exercise03.RingBuffer(1);
-    ringBuffer25.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator28 = ringBuffer25.spliterator();
-    int i29 = ringBuffer25.size();
-    java.util.Spliterator spliterator30 = ringBuffer25.spliterator();
-    java.util.Iterator iterator31 = ringBuffer25.iterator();
-    java.util.Spliterator spliterator32 = ringBuffer25.spliterator();
-    java.util.Iterator iterator33 = ringBuffer25.iterator();
-    int i34 = ringBuffer25.size();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer25);
-    java.lang.Object obj36 = ringBuffer15.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer15);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i29 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i34 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj36);
-
-  }
-
-  @Test
-  public void test384() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test384"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    boolean b4 = ringBuffer1.isEmpty();
-    int i5 = ringBuffer1.size();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.lang.Object obj7 = ringBuffer1.dequeue();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + 'a'+ "'", obj7.equals('a'));
-
-  }
-
-  @Test
-  public void test385() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test385"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Iterator iterator4 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
-    boolean b7 = ringBuffer6.isEmpty();
-    java.util.Spliterator spliterator8 = ringBuffer6.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
-    java.util.Iterator iterator10 = ringBuffer6.iterator();
-    boolean b11 = ringBuffer6.isEmpty();
-    int i12 = ringBuffer6.size();
-    java.util.Spliterator spliterator13 = ringBuffer6.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator13);
-    int i15 = ringBuffer1.size();
-    java.lang.Object obj16 = ringBuffer1.dequeue();
-    boolean b17 = ringBuffer1.isEmpty();
-    boolean b18 = ringBuffer1.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-
-  }
-
-  @Test
-  public void test386() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test386"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    int i8 = ringBuffer1.size();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    boolean b13 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer14 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer14);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == true);
-
-  }
-
-  @Test
-  public void test387() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test387"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    boolean b16 = ringBuffer10.isEmpty();
-    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(1);
-    boolean b19 = ringBuffer18.isEmpty();
-    java.util.Spliterator spliterator20 = ringBuffer18.spliterator();
-    java.util.Spliterator spliterator21 = ringBuffer18.spliterator();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer18);
-    java.util.Spliterator spliterator24 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer25 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer25);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-
-  }
-
-  @Test
-  public void test388() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test388"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator9);
-    boolean b11 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator12 = ringBuffer1.iterator();
-    boolean b13 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer14 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer14);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == false);
-
-  }
-
-  @Test
-  public void test389() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test389"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer8 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer8);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-
-  }
-
-  @Test
-  public void test390() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test390"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    int i8 = ringBuffer1.size();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    boolean b12 = ringBuffer1.isEmpty();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj13 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-
-  }
-
-  @Test
-  public void test391() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test391"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    int i7 = ringBuffer1.size();
-    int i8 = ringBuffer1.size();
-    int i9 = ringBuffer1.size();
-    int i10 = ringBuffer1.size();
-    int i11 = ringBuffer1.size();
-    int i12 = ringBuffer1.size();
-    boolean b13 = ringBuffer1.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == true);
-
-  }
-
-  @Test
-  public void test392() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test392"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    int i17 = ringBuffer1.size();
-    java.util.function.Consumer consumer18 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer18);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 1);
-
-  }
-
-  @Test
-  public void test393() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test393"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    boolean b8 = ringBuffer7.isEmpty();
-    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
-    int i11 = ringBuffer7.size();
-    boolean b12 = ringBuffer7.isEmpty();
-    int i13 = ringBuffer7.size();
-    int i14 = ringBuffer7.size();
-    java.util.function.Consumer consumer15 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer7.forEach(consumer15);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i14 == 0);
-
-  }
-
-  @Test
-  public void test394() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test394"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    int i7 = ringBuffer1.size();
-    int i8 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(10);
-    ringBuffer10.enqueue((java.lang.Object)'#');
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.lang.Object obj14 = ringBuffer10.dequeue();
-    int i15 = ringBuffer10.size();
-    ringBuffer1.enqueue((java.lang.Object)i15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj14 + "' != '" + '#'+ "'", obj14.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 0);
-
-  }
-
-  @Test
-  public void test395() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test395"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    boolean b8 = ringBuffer7.isEmpty();
-    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
-    int i11 = ringBuffer7.size();
-    boolean b12 = ringBuffer7.isEmpty();
-    int i13 = ringBuffer7.size();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
-    boolean b18 = ringBuffer17.isEmpty();
-    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
-    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
-    java.util.Iterator iterator21 = ringBuffer17.iterator();
-    boolean b22 = ringBuffer17.isEmpty();
-    java.util.Iterator iterator23 = ringBuffer17.iterator();
-    exercise03.RingBuffer ringBuffer25 = new exercise03.RingBuffer(1);
-    boolean b26 = ringBuffer25.isEmpty();
-    java.util.Spliterator spliterator27 = ringBuffer25.spliterator();
-    java.util.Spliterator spliterator28 = ringBuffer25.spliterator();
-    java.util.Iterator iterator29 = ringBuffer25.iterator();
-    boolean b30 = ringBuffer25.isEmpty();
-    int i31 = ringBuffer25.size();
-    java.util.Spliterator spliterator32 = ringBuffer25.spliterator();
-    ringBuffer17.enqueue((java.lang.Object)spliterator32);
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer17);
-    int i35 = ringBuffer17.size();
-    boolean b36 = ringBuffer17.isEmpty();
-    ringBuffer7.enqueue((java.lang.Object)b36);
-    boolean b38 = ringBuffer7.isEmpty();
-    java.lang.Object obj39 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer7.enqueue(obj39);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b26 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b30 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i31 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i35 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b36 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == false);
-
-  }
-
-  @Test
-  public void test396() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test396"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    java.util.Iterator iterator10 = ringBuffer8.iterator();
-    java.util.Iterator iterator11 = ringBuffer8.iterator();
-    boolean b12 = ringBuffer8.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-
-  }
-
-  @Test
-  public void test397() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test397"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    int i17 = ringBuffer9.size();
-    java.util.function.Consumer consumer18 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer18);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-
-  }
-
-  @Test
-  public void test398() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test398"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    int i10 = ringBuffer1.size();
-    int i11 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.util.Iterator iterator17 = ringBuffer13.iterator();
-    boolean b18 = ringBuffer13.isEmpty();
-    int i19 = ringBuffer13.size();
-    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator21 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer13.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    exercise03.RingBuffer ringBuffer26 = new exercise03.RingBuffer(1);
-    boolean b27 = ringBuffer26.isEmpty();
-    java.util.Spliterator spliterator28 = ringBuffer26.spliterator();
-    java.util.Spliterator spliterator29 = ringBuffer26.spliterator();
-    java.util.Iterator iterator30 = ringBuffer26.iterator();
-    java.util.Iterator iterator31 = ringBuffer26.iterator();
-    boolean b32 = ringBuffer26.isEmpty();
-    int i33 = ringBuffer26.size();
-    boolean b34 = ringBuffer26.isEmpty();
-    int i35 = ringBuffer26.size();
-    int i36 = ringBuffer26.size();
-    exercise03.RingBuffer ringBuffer38 = new exercise03.RingBuffer(1);
-    boolean b39 = ringBuffer38.isEmpty();
-    java.util.Spliterator spliterator40 = ringBuffer38.spliterator();
-    java.util.Spliterator spliterator41 = ringBuffer38.spliterator();
-    java.util.Iterator iterator42 = ringBuffer38.iterator();
-    exercise03.RingBuffer ringBuffer44 = new exercise03.RingBuffer(1);
-    boolean b45 = ringBuffer44.isEmpty();
-    java.util.Spliterator spliterator46 = ringBuffer44.spliterator();
-    java.util.Spliterator spliterator47 = ringBuffer44.spliterator();
-    ringBuffer38.enqueue((java.lang.Object)spliterator47);
-    ringBuffer26.enqueue((java.lang.Object)ringBuffer38);
-    boolean b50 = ringBuffer38.isEmpty();
-    java.lang.Object obj51 = ringBuffer38.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue(obj51);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b32 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i33 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i35 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i36 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b39 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator41);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b45 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b50 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj51);
-
-  }
-
-  @Test
-  public void test399() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test399"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    boolean b10 = ringBuffer1.isEmpty();
-    int i11 = ringBuffer1.size();
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    java.lang.Object obj13 = null;
-    ringBuffer1.enqueue(obj13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-
-  }
-
-  @Test
-  public void test400() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test400"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    boolean b8 = ringBuffer7.isEmpty();
-    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator10);
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-
-  }
-
-  @Test
-  public void test401() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test401"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer9.spliterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    int i15 = ringBuffer9.size();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Iterator iterator17 = ringBuffer9.iterator();
-    boolean b18 = ringBuffer9.isEmpty();
-    int i19 = ringBuffer9.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj20 = ringBuffer9.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-
-  }
-
-  @Test
-  public void test402() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test402"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    int i8 = ringBuffer1.size();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(10);
-    ringBuffer11.enqueue((java.lang.Object)'#');
-    java.util.Iterator iterator14 = ringBuffer11.iterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
-    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(10);
-    ringBuffer17.enqueue((java.lang.Object)'#');
-    int i20 = ringBuffer17.size();
-    java.util.Iterator iterator21 = ringBuffer17.iterator();
-    java.util.Spliterator spliterator22 = ringBuffer17.spliterator();
-    int i23 = ringBuffer17.size();
-    java.lang.Object obj24 = ringBuffer17.dequeue();
-    int i25 = ringBuffer17.size();
-    exercise03.RingBuffer ringBuffer27 = new exercise03.RingBuffer(1);
-    boolean b28 = ringBuffer27.isEmpty();
-    java.util.Spliterator spliterator29 = ringBuffer27.spliterator();
-    java.util.Spliterator spliterator30 = ringBuffer27.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer27.spliterator();
-    java.util.Iterator iterator32 = ringBuffer27.iterator();
-    int i33 = ringBuffer27.size();
-    boolean b34 = ringBuffer27.isEmpty();
-    boolean b35 = ringBuffer27.isEmpty();
-    java.util.Spliterator spliterator36 = ringBuffer27.spliterator();
-    java.util.Spliterator spliterator37 = ringBuffer27.spliterator();
-    java.util.Iterator iterator38 = ringBuffer27.iterator();
-    exercise03.RingBuffer ringBuffer40 = new exercise03.RingBuffer(0);
-    java.util.Spliterator spliterator41 = ringBuffer40.spliterator();
-    ringBuffer27.enqueue((java.lang.Object)ringBuffer40);
-    ringBuffer17.enqueue((java.lang.Object)ringBuffer27);
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer27);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i23 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj24 + "' != '" + '#'+ "'", obj24.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i25 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i33 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b35 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator41);
-
-  }
-
-  @Test
-  public void test403() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test403"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    boolean b12 = ringBuffer1.isEmpty();
-    int i13 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    boolean b16 = ringBuffer15.isEmpty();
-    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
-    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
-    java.util.Iterator iterator19 = ringBuffer15.iterator();
-    java.util.Iterator iterator20 = ringBuffer15.iterator();
-    boolean b21 = ringBuffer15.isEmpty();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer23);
-    boolean b28 = ringBuffer15.isEmpty();
-    java.util.Iterator iterator29 = ringBuffer15.iterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer15);
-    exercise03.RingBuffer ringBuffer32 = new exercise03.RingBuffer(1);
-    boolean b33 = ringBuffer32.isEmpty();
-    java.util.Spliterator spliterator34 = ringBuffer32.spliterator();
-    java.util.Spliterator spliterator35 = ringBuffer32.spliterator();
-    java.util.Iterator iterator36 = ringBuffer32.iterator();
-    boolean b37 = ringBuffer32.isEmpty();
-    int i38 = ringBuffer32.size();
-    java.util.Iterator iterator39 = ringBuffer32.iterator();
-    exercise03.RingBuffer ringBuffer41 = new exercise03.RingBuffer(1);
-    boolean b42 = ringBuffer41.isEmpty();
-    java.util.Spliterator spliterator43 = ringBuffer41.spliterator();
-    java.util.Spliterator spliterator44 = ringBuffer41.spliterator();
-    java.util.Iterator iterator45 = ringBuffer41.iterator();
-    boolean b46 = ringBuffer41.isEmpty();
-    int i47 = ringBuffer41.size();
-    java.util.Spliterator spliterator48 = ringBuffer41.spliterator();
-    ringBuffer32.enqueue((java.lang.Object)ringBuffer41);
-    java.util.Iterator iterator50 = ringBuffer41.iterator();
-    java.util.Iterator iterator51 = ringBuffer41.iterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)iterator51);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b37 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b42 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b46 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i47 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator48);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator50);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator51);
-
-  }
-
-  @Test
-  public void test404() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test404"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    int i8 = ringBuffer1.size();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    boolean b12 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-
-  }
-
-  @Test
-  public void test405() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test405"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    int i8 = ringBuffer1.size();
-    boolean b9 = ringBuffer1.isEmpty();
-    int i10 = ringBuffer1.size();
-    int i11 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.util.Iterator iterator17 = ringBuffer13.iterator();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    ringBuffer13.enqueue((java.lang.Object)spliterator22);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    boolean b25 = ringBuffer13.isEmpty();
-    int i26 = ringBuffer13.size();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    ringBuffer28.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    int i32 = ringBuffer28.size();
-    java.util.Spliterator spliterator33 = ringBuffer28.spliterator();
-    java.util.Iterator iterator34 = ringBuffer28.iterator();
-    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
-    java.util.Iterator iterator36 = ringBuffer28.iterator();
-    int i37 = ringBuffer28.size();
-    int i38 = ringBuffer28.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer13.enqueue((java.lang.Object)ringBuffer28);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b9 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i26 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i32 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i37 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 1);
-
-  }
-
-  @Test
-  public void test406() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test406"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    boolean b8 = ringBuffer7.isEmpty();
-    java.util.Spliterator spliterator9 = ringBuffer7.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer7);
-    int i11 = ringBuffer7.size();
-    boolean b12 = ringBuffer7.isEmpty();
-    exercise03.RingBuffer ringBuffer14 = new exercise03.RingBuffer(1);
-    ringBuffer14.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator17 = ringBuffer14.spliterator();
-    int i18 = ringBuffer14.size();
-    java.util.Spliterator spliterator19 = ringBuffer14.spliterator();
-    java.util.Iterator iterator20 = ringBuffer14.iterator();
-    ringBuffer7.enqueue((java.lang.Object)iterator20);
-    java.util.function.Consumer consumer22 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer7.forEach(consumer22);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-
-  }
-
-  @Test
-  public void test407() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test407"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Iterator iterator9 = ringBuffer1.iterator();
-    int i10 = ringBuffer1.size();
-    java.util.Iterator iterator11 = ringBuffer1.iterator();
-    java.util.Iterator iterator12 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator13 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer14 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer14);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-
-  }
-
-  @Test
-  public void test408() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test408"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator15);
-    java.lang.Object obj17 = ringBuffer1.dequeue();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer19.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator23);
-    java.lang.Object obj25 = ringBuffer1.dequeue();
-    ringBuffer1.enqueue((java.lang.Object)(byte)100);
-    exercise03.RingBuffer ringBuffer29 = new exercise03.RingBuffer(1);
-    boolean b30 = ringBuffer29.isEmpty();
-    java.util.Spliterator spliterator31 = ringBuffer29.spliterator();
-    java.util.Spliterator spliterator32 = ringBuffer29.spliterator();
-    java.util.Iterator iterator33 = ringBuffer29.iterator();
-    java.util.Iterator iterator34 = ringBuffer29.iterator();
-    java.util.Spliterator spliterator35 = ringBuffer29.spliterator();
-    java.util.Spliterator spliterator36 = ringBuffer29.spliterator();
-    int i37 = ringBuffer29.size();
-    int i38 = ringBuffer29.size();
-    int i39 = ringBuffer29.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer29);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b30 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i37 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i39 == 0);
-
-  }
-
-  @Test
-  public void test409() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test409"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
-    java.util.Iterator iterator16 = ringBuffer11.iterator();
-    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
-    int i18 = ringBuffer8.size();
-    int i19 = ringBuffer8.size();
-    exercise03.RingBuffer ringBuffer21 = new exercise03.RingBuffer(1);
-    boolean b22 = ringBuffer21.isEmpty();
-    java.util.Spliterator spliterator23 = ringBuffer21.spliterator();
-    java.util.Spliterator spliterator24 = ringBuffer21.spliterator();
-    java.util.Iterator iterator25 = ringBuffer21.iterator();
-    java.util.Iterator iterator26 = ringBuffer21.iterator();
-    boolean b27 = ringBuffer21.isEmpty();
-    exercise03.RingBuffer ringBuffer29 = new exercise03.RingBuffer(1);
-    boolean b30 = ringBuffer29.isEmpty();
-    java.util.Spliterator spliterator31 = ringBuffer29.spliterator();
-    java.util.Spliterator spliterator32 = ringBuffer29.spliterator();
-    ringBuffer21.enqueue((java.lang.Object)ringBuffer29);
-    exercise03.RingBuffer ringBuffer35 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator36 = ringBuffer35.iterator();
-    ringBuffer29.enqueue((java.lang.Object)ringBuffer35);
-    boolean b38 = ringBuffer29.isEmpty();
-    java.lang.Object obj39 = ringBuffer29.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer8.enqueue((java.lang.Object)ringBuffer29);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b30 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj39);
-
-  }
-
-  @Test
-  public void test410() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test410"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.lang.Object obj5 = ringBuffer1.dequeue();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj7 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-
-  }
-
-  @Test
-  public void test411() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test411"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Iterator iterator4 = ringBuffer1.iterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    int i6 = ringBuffer1.size();
-    java.util.function.Consumer consumer7 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer7);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i6 == 1);
-
-  }
-
-  @Test
-  public void test412() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test412"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Spliterator spliterator17 = ringBuffer9.spliterator();
-    java.util.Iterator iterator18 = ringBuffer9.iterator();
-    boolean b19 = ringBuffer9.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-
-  }
-
-  @Test
-  public void test413() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test413"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator2 = ringBuffer1.iterator();
-    java.util.Iterator iterator3 = ringBuffer1.iterator();
-    java.util.Iterator iterator4 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer7 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer7);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-
-  }
-
-  @Test
-  public void test414() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test414"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.util.Iterator iterator19 = ringBuffer10.iterator();
-    java.util.Iterator iterator20 = ringBuffer10.iterator();
-    java.util.function.Consumer consumer21 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer10.forEach(consumer21);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-
-  }
-
-  @Test
-  public void test415() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test415"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    ringBuffer1.enqueue((java.lang.Object)(short)1);
-    int i7 = ringBuffer1.size();
-    java.util.function.Consumer consumer8 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer8);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 1);
-
-  }
-
-  @Test
-  public void test416() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test416"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator15);
-    java.lang.Object obj17 = ringBuffer1.dequeue();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer19.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator23);
-    java.lang.Object obj25 = ringBuffer1.dequeue();
-    ringBuffer1.enqueue((java.lang.Object)(byte)100);
-    java.lang.Object obj28 = ringBuffer1.dequeue();
-    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
-    boolean b31 = ringBuffer30.isEmpty();
-    java.util.Spliterator spliterator32 = ringBuffer30.spliterator();
-    java.util.Spliterator spliterator33 = ringBuffer30.spliterator();
-    java.util.Iterator iterator34 = ringBuffer30.iterator();
-    java.util.Iterator iterator35 = ringBuffer30.iterator();
-    java.util.Spliterator spliterator36 = ringBuffer30.spliterator();
-    java.util.Spliterator spliterator37 = ringBuffer30.spliterator();
-    int i38 = ringBuffer30.size();
-    java.util.Spliterator spliterator39 = ringBuffer30.spliterator();
-    exercise03.RingBuffer ringBuffer41 = new exercise03.RingBuffer(1);
-    boolean b42 = ringBuffer41.isEmpty();
-    java.util.Spliterator spliterator43 = ringBuffer41.spliterator();
-    java.util.Spliterator spliterator44 = ringBuffer41.spliterator();
-    java.util.Spliterator spliterator45 = ringBuffer41.spliterator();
-    java.util.Iterator iterator46 = ringBuffer41.iterator();
-    int i47 = ringBuffer41.size();
-    int i48 = ringBuffer41.size();
-    ringBuffer30.enqueue((java.lang.Object)ringBuffer41);
-    java.util.Iterator iterator50 = ringBuffer30.iterator();
-    int i51 = ringBuffer30.size();
-    java.util.Iterator iterator52 = ringBuffer30.iterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer30);
-    exercise03.RingBuffer ringBuffer55 = new exercise03.RingBuffer(1);
-    ringBuffer55.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator58 = ringBuffer55.spliterator();
-    int i59 = ringBuffer55.size();
-    boolean b60 = ringBuffer55.isEmpty();
-    boolean b61 = ringBuffer55.isEmpty();
-    java.util.Iterator iterator62 = ringBuffer55.iterator();
-    int i63 = ringBuffer55.size();
-    java.util.Iterator iterator64 = ringBuffer55.iterator();
-    int i65 = ringBuffer55.size();
-    java.lang.Object obj66 = ringBuffer55.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer30.enqueue(obj66);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj28 + "' != '" + (byte)100+ "'", obj28.equals((byte)100));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b31 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b42 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i47 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i48 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator50);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i51 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator58);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i59 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b60 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b61 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator62);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i63 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator64);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i65 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj66 + "' != '" + 'a'+ "'", obj66.equals('a'));
-
-  }
-
-  @Test
-  public void test417() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test417"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Spliterator spliterator17 = ringBuffer9.spliterator();
-    java.util.Iterator iterator18 = ringBuffer9.iterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj19 = ringBuffer9.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator18);
-
-  }
-
-  @Test
-  public void test418() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test418"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    ringBuffer3.enqueue((java.lang.Object)spliterator18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
-    int i21 = ringBuffer3.size();
-    boolean b22 = ringBuffer3.isEmpty();
-    java.lang.Object obj23 = ringBuffer3.dequeue();
-    int i24 = ringBuffer3.size();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i21 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i24 == 0);
-
-  }
-
-  @Test
-  public void test419() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test419"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.util.Iterator iterator19 = ringBuffer10.iterator();
-    boolean b20 = ringBuffer10.isEmpty();
-    int i21 = ringBuffer10.size();
-    java.util.function.Consumer consumer22 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer10.forEach(consumer22);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i21 == 0);
-
-  }
-
-  @Test
-  public void test420() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test420"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    boolean b16 = ringBuffer15.isEmpty();
-    java.util.Spliterator spliterator17 = ringBuffer15.spliterator();
-    java.util.Spliterator spliterator18 = ringBuffer15.spliterator();
-    java.util.Iterator iterator19 = ringBuffer15.iterator();
-    java.util.Iterator iterator20 = ringBuffer15.iterator();
-    boolean b21 = ringBuffer15.isEmpty();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer23);
-    boolean b28 = ringBuffer15.isEmpty();
-    java.util.Spliterator spliterator29 = ringBuffer15.spliterator();
-    ringBuffer9.enqueue((java.lang.Object)spliterator29);
-    boolean b31 = ringBuffer9.isEmpty();
-    java.lang.Object obj32 = ringBuffer9.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj33 = ringBuffer9.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b31 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj32);
-
-  }
-
-  @Test
-  public void test421() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test421"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)false);
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    boolean b5 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer7 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer7);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + false+ "'", obj4.equals(false));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b5 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-
-  }
-
-  @Test
-  public void test422() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test422"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer10.spliterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator15);
-    int i17 = ringBuffer1.size();
-    java.util.function.Consumer consumer18 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer18);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 1);
-
-  }
-
-  @Test
-  public void test423() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test423"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Iterator iterator11 = ringBuffer1.iterator();
-    boolean b12 = ringBuffer1.isEmpty();
-    boolean b13 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator14 = ringBuffer1.iterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b13 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-
-  }
-
-  @Test
-  public void test424() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test424"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.lang.Object obj5 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    int i8 = ringBuffer1.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj9 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-
-  }
-
-  @Test
-  public void test425() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test425"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    int i7 = ringBuffer1.size();
-    boolean b8 = ringBuffer1.isEmpty();
-    boolean b9 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    int i12 = ringBuffer1.size();
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b9 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-
-  }
-
-  @Test
-  public void test426() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test426"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.lang.Object obj19 = ringBuffer1.dequeue();
-    java.util.Iterator iterator20 = ringBuffer1.iterator();
-    int i21 = ringBuffer1.size();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i21 == 0);
-
-  }
-
-  @Test
-  public void test427() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test427"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer8.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator11 = ringBuffer8.spliterator();
-    java.lang.Object obj12 = ringBuffer8.dequeue();
-    java.util.Spliterator spliterator13 = ringBuffer8.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator13);
-    java.lang.Object obj15 = ringBuffer1.dequeue();
-    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
-    boolean b18 = ringBuffer17.isEmpty();
-    java.util.Spliterator spliterator19 = ringBuffer17.spliterator();
-    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
-    java.util.Iterator iterator21 = ringBuffer17.iterator();
-    boolean b22 = ringBuffer17.isEmpty();
-    int i23 = ringBuffer17.size();
-    java.util.Iterator iterator24 = ringBuffer17.iterator();
-    exercise03.RingBuffer ringBuffer26 = new exercise03.RingBuffer(1);
-    boolean b27 = ringBuffer26.isEmpty();
-    java.util.Spliterator spliterator28 = ringBuffer26.spliterator();
-    java.util.Spliterator spliterator29 = ringBuffer26.spliterator();
-    java.util.Iterator iterator30 = ringBuffer26.iterator();
-    boolean b31 = ringBuffer26.isEmpty();
-    int i32 = ringBuffer26.size();
-    java.util.Spliterator spliterator33 = ringBuffer26.spliterator();
-    ringBuffer17.enqueue((java.lang.Object)ringBuffer26);
-    java.util.Iterator iterator35 = ringBuffer26.iterator();
-    boolean b36 = ringBuffer26.isEmpty();
-    boolean b37 = ringBuffer26.isEmpty();
-    exercise03.RingBuffer ringBuffer39 = new exercise03.RingBuffer(1);
-    boolean b40 = ringBuffer39.isEmpty();
-    java.util.Spliterator spliterator41 = ringBuffer39.spliterator();
-    java.util.Spliterator spliterator42 = ringBuffer39.spliterator();
-    java.util.Iterator iterator43 = ringBuffer39.iterator();
-    boolean b44 = ringBuffer39.isEmpty();
-    exercise03.RingBuffer ringBuffer46 = new exercise03.RingBuffer(1);
-    ringBuffer39.enqueue((java.lang.Object)ringBuffer46);
-    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
-    boolean b50 = ringBuffer49.isEmpty();
-    java.util.Spliterator spliterator51 = ringBuffer49.spliterator();
-    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
-    java.util.Spliterator spliterator53 = ringBuffer49.spliterator();
-    java.util.Iterator iterator54 = ringBuffer49.iterator();
-    ringBuffer46.enqueue((java.lang.Object)ringBuffer49);
-    ringBuffer26.enqueue((java.lang.Object)ringBuffer46);
-    java.util.Iterator iterator57 = ringBuffer46.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator57);
-    java.util.function.Consumer consumer59 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer59);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj12 + "' != '" + 'a'+ "'", obj12.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i23 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b31 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i32 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b36 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b37 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b40 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator41);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b44 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b50 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator51);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator53);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator57);
-
-  }
-
-  @Test
-  public void test428() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test428"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(100);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator9);
-    boolean b11 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer12 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer12);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == false);
-
-  }
-
-  @Test
-  public void test429() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test429"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    boolean b12 = ringBuffer1.isEmpty();
-    int i13 = ringBuffer1.size();
-    java.util.function.Consumer consumer14 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer14);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-
-  }
-
-  @Test
-  public void test430() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test430"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj5 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + '#'+ "'", obj4.equals('#'));
-
-  }
-
-  @Test
-  public void test431() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test431"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Iterator iterator9 = ringBuffer1.iterator();
-    int i10 = ringBuffer1.size();
-    java.util.Iterator iterator11 = ringBuffer1.iterator();
-    java.util.Iterator iterator12 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator13 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    ringBuffer15.enqueue((java.lang.Object)'a');
-    java.lang.Object obj18 = ringBuffer15.dequeue();
-    ringBuffer15.enqueue((java.lang.Object)(short)1);
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer15);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj18 + "' != '" + 'a'+ "'", obj18.equals('a'));
-
-  }
-
-  @Test
-  public void test432() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test432"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Iterator iterator4 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
-    boolean b7 = ringBuffer6.isEmpty();
-    java.util.Spliterator spliterator8 = ringBuffer6.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
-    java.util.Iterator iterator10 = ringBuffer6.iterator();
-    boolean b11 = ringBuffer6.isEmpty();
-    int i12 = ringBuffer6.size();
-    java.util.Spliterator spliterator13 = ringBuffer6.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)spliterator13);
-    int i15 = ringBuffer1.size();
-    java.lang.Object obj16 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer17 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer17);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj16);
-
-  }
-
-  @Test
-  public void test433() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test433"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    int i6 = ringBuffer1.size();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    java.util.function.Consumer consumer9 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer9);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i6 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-
-  }
-
-  @Test
-  public void test434() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test434"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    java.util.Iterator iterator10 = ringBuffer8.iterator();
-    java.util.function.Consumer consumer11 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer8.forEach(consumer11);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-
-  }
-
-  @Test
-  public void test435() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test435"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    boolean b6 = ringBuffer1.isEmpty();
-    boolean b7 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    int i9 = ringBuffer1.size();
-    java.util.Iterator iterator10 = ringBuffer1.iterator();
-    int i11 = ringBuffer1.size();
-    java.lang.Object obj12 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer13 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer13);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj12 + "' != '" + 'a'+ "'", obj12.equals('a'));
-
-  }
-
-  @Test
-  public void test436() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test436"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b14 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer1.spliterator();
-    boolean b16 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator17 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator18 = ringBuffer1.spliterator();
-    java.util.Iterator iterator19 = ringBuffer1.iterator();
-    boolean b20 = ringBuffer1.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == false);
-
-  }
-
-  @Test
-  public void test437() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test437"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(1);
-    boolean b21 = ringBuffer20.isEmpty();
-    java.util.Spliterator spliterator22 = ringBuffer20.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer20.spliterator();
-    java.util.Iterator iterator24 = ringBuffer20.iterator();
-    boolean b25 = ringBuffer20.isEmpty();
-    java.util.Iterator iterator26 = ringBuffer20.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    java.util.Iterator iterator33 = ringBuffer28.iterator();
-    boolean b34 = ringBuffer28.isEmpty();
-    ringBuffer20.enqueue((java.lang.Object)ringBuffer28);
-    boolean b36 = ringBuffer20.isEmpty();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer20);
-    java.lang.Object obj38 = ringBuffer20.dequeue();
-    java.util.Iterator iterator39 = ringBuffer20.iterator();
-    boolean b40 = ringBuffer20.isEmpty();
-    java.util.function.Consumer consumer41 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer20.forEach(consumer41);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b36 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b40 == true);
-
-  }
-
-  @Test
-  public void test438() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test438"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    java.util.Iterator iterator15 = ringBuffer10.iterator();
-    boolean b16 = ringBuffer10.isEmpty();
-    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(1);
-    boolean b19 = ringBuffer18.isEmpty();
-    java.util.Spliterator spliterator20 = ringBuffer18.spliterator();
-    java.util.Spliterator spliterator21 = ringBuffer18.spliterator();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer18);
-    int i24 = ringBuffer1.size();
-    java.util.Spliterator spliterator25 = ringBuffer1.spliterator();
-    boolean b26 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer27 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer27);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i24 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b26 == false);
-
-  }
-
-  @Test
-  public void test439() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test439"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    boolean b14 = ringBuffer9.isEmpty();
-    int i15 = ringBuffer9.size();
-    java.lang.Object obj16 = null;
-    ringBuffer9.enqueue(obj16);
-    boolean b18 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)b18);
-    int i20 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    boolean b23 = ringBuffer22.isEmpty();
-    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
-    java.util.Iterator iterator26 = ringBuffer22.iterator();
-    boolean b27 = ringBuffer22.isEmpty();
-    int i28 = ringBuffer22.size();
-    java.util.Iterator iterator29 = ringBuffer22.iterator();
-    exercise03.RingBuffer ringBuffer31 = new exercise03.RingBuffer(1);
-    boolean b32 = ringBuffer31.isEmpty();
-    java.util.Spliterator spliterator33 = ringBuffer31.spliterator();
-    java.util.Spliterator spliterator34 = ringBuffer31.spliterator();
-    java.util.Iterator iterator35 = ringBuffer31.iterator();
-    boolean b36 = ringBuffer31.isEmpty();
-    int i37 = ringBuffer31.size();
-    java.util.Spliterator spliterator38 = ringBuffer31.spliterator();
-    ringBuffer22.enqueue((java.lang.Object)ringBuffer31);
-    exercise03.RingBuffer ringBuffer41 = new exercise03.RingBuffer(1);
-    boolean b42 = ringBuffer41.isEmpty();
-    java.util.Spliterator spliterator43 = ringBuffer41.spliterator();
-    java.util.Spliterator spliterator44 = ringBuffer41.spliterator();
-    java.util.Iterator iterator45 = ringBuffer41.iterator();
-    boolean b46 = ringBuffer41.isEmpty();
-    java.util.Iterator iterator47 = ringBuffer41.iterator();
-    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
-    boolean b50 = ringBuffer49.isEmpty();
-    java.util.Spliterator spliterator51 = ringBuffer49.spliterator();
-    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
-    java.util.Iterator iterator53 = ringBuffer49.iterator();
-    java.util.Iterator iterator54 = ringBuffer49.iterator();
-    boolean b55 = ringBuffer49.isEmpty();
-    ringBuffer41.enqueue((java.lang.Object)ringBuffer49);
-    boolean b57 = ringBuffer41.isEmpty();
-    ringBuffer31.enqueue((java.lang.Object)ringBuffer41);
-    java.util.Spliterator spliterator59 = ringBuffer31.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)spliterator59);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i28 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b32 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b36 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i37 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b42 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b46 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b50 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator51);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator53);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b55 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b57 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator59);
-
-  }
-
-  @Test
-  public void test440() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test440"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(1);
-    boolean b21 = ringBuffer20.isEmpty();
-    java.util.Spliterator spliterator22 = ringBuffer20.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer20.spliterator();
-    java.util.Iterator iterator24 = ringBuffer20.iterator();
-    boolean b25 = ringBuffer20.isEmpty();
-    java.util.Iterator iterator26 = ringBuffer20.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    java.util.Iterator iterator33 = ringBuffer28.iterator();
-    boolean b34 = ringBuffer28.isEmpty();
-    ringBuffer20.enqueue((java.lang.Object)ringBuffer28);
-    boolean b36 = ringBuffer20.isEmpty();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer20);
-    java.util.Spliterator spliterator38 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator39 = ringBuffer10.spliterator();
-    java.lang.Object obj40 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer10.enqueue(obj40);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b36 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator39);
-
-  }
-
-  @Test
-  public void test441() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test441"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    int i7 = ringBuffer1.size();
-    java.lang.Object obj8 = ringBuffer1.dequeue();
-    int i9 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
-    java.util.Iterator iterator16 = ringBuffer11.iterator();
-    int i17 = ringBuffer11.size();
-    boolean b18 = ringBuffer11.isEmpty();
-    boolean b19 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator20 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator21 = ringBuffer11.spliterator();
-    java.util.Iterator iterator22 = ringBuffer11.iterator();
-    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(0);
-    java.util.Spliterator spliterator25 = ringBuffer24.spliterator();
-    ringBuffer11.enqueue((java.lang.Object)ringBuffer24);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
-    java.util.function.Consumer consumer28 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer28);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj8 + "' != '" + '#'+ "'", obj8.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-
-  }
-
-  @Test
-  public void test442() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test442"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)false);
-    ringBuffer1.enqueue((java.lang.Object)(short)0);
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer8 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer8);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-
-  }
-
-  @Test
-  public void test443() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test443"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.util.Iterator iterator19 = ringBuffer10.iterator();
-    boolean b20 = ringBuffer10.isEmpty();
-    boolean b21 = ringBuffer10.isEmpty();
-    exercise03.RingBuffer ringBuffer23 = new exercise03.RingBuffer(1);
-    boolean b24 = ringBuffer23.isEmpty();
-    java.util.Spliterator spliterator25 = ringBuffer23.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer23.spliterator();
-    java.util.Iterator iterator27 = ringBuffer23.iterator();
-    boolean b28 = ringBuffer23.isEmpty();
-    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
-    ringBuffer23.enqueue((java.lang.Object)ringBuffer30);
-    exercise03.RingBuffer ringBuffer33 = new exercise03.RingBuffer(1);
-    boolean b34 = ringBuffer33.isEmpty();
-    java.util.Spliterator spliterator35 = ringBuffer33.spliterator();
-    java.util.Spliterator spliterator36 = ringBuffer33.spliterator();
-    java.util.Spliterator spliterator37 = ringBuffer33.spliterator();
-    java.util.Iterator iterator38 = ringBuffer33.iterator();
-    ringBuffer30.enqueue((java.lang.Object)ringBuffer33);
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer30);
-    java.lang.Object obj41 = ringBuffer10.dequeue();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj41);
-
-  }
-
-  @Test
-  public void test444() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test444"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(10);
-    ringBuffer7.enqueue((java.lang.Object)'#');
-    int i10 = ringBuffer7.size();
-    java.util.Iterator iterator11 = ringBuffer7.iterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    ringBuffer7.enqueue((java.lang.Object)ringBuffer13);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj18 = ringBuffer13.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-
-  }
-
-  @Test
-  public void test445() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test445"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(10);
-    ringBuffer7.enqueue((java.lang.Object)'#');
-    int i10 = ringBuffer7.size();
-    java.util.Iterator iterator11 = ringBuffer7.iterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    ringBuffer7.enqueue((java.lang.Object)ringBuffer13);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    java.util.Iterator iterator24 = ringBuffer19.iterator();
-    boolean b25 = ringBuffer19.isEmpty();
-    exercise03.RingBuffer ringBuffer27 = new exercise03.RingBuffer(1);
-    boolean b28 = ringBuffer27.isEmpty();
-    java.util.Spliterator spliterator29 = ringBuffer27.spliterator();
-    java.util.Spliterator spliterator30 = ringBuffer27.spliterator();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer27);
-    exercise03.RingBuffer ringBuffer33 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator34 = ringBuffer33.iterator();
-    ringBuffer27.enqueue((java.lang.Object)ringBuffer33);
-    java.util.Spliterator spliterator36 = ringBuffer27.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer27);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-
-  }
-
-  @Test
-  public void test446() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test446"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b14 = ringBuffer1.isEmpty();
-    java.lang.Object obj15 = ringBuffer1.dequeue();
-    int i16 = ringBuffer1.size();
-    int i17 = ringBuffer1.size();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-
-  }
-
-  @Test
-  public void test447() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test447"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator3 = ringBuffer1.iterator();
-    boolean b4 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    int i6 = ringBuffer1.size();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i6 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-
-  }
-
-  @Test
-  public void test448() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test448"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    ringBuffer1.enqueue((java.lang.Object)(short)1);
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    boolean b8 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer9 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer9);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == false);
-
-  }
-
-  @Test
-  public void test449() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test449"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    boolean b8 = ringBuffer1.isEmpty();
-    int i9 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(10);
-    ringBuffer11.enqueue((java.lang.Object)'#');
-    int i14 = ringBuffer11.size();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    int i16 = ringBuffer11.size();
-    java.lang.Object obj17 = ringBuffer11.dequeue();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    ringBuffer19.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    int i23 = ringBuffer19.size();
-    boolean b24 = ringBuffer19.isEmpty();
-    boolean b25 = ringBuffer19.isEmpty();
-    boolean b26 = ringBuffer19.isEmpty();
-    boolean b27 = ringBuffer19.isEmpty();
-    int i28 = ringBuffer19.size();
-    ringBuffer11.enqueue((java.lang.Object)i28);
-    java.util.Iterator iterator30 = ringBuffer11.iterator();
-    java.util.Iterator iterator31 = ringBuffer11.iterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
-    int i33 = ringBuffer11.size();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i14 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj17 + "' != '" + '#'+ "'", obj17.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i23 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b26 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i28 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i33 == 1);
-
-  }
-
-  @Test
-  public void test450() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test450"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator16 = ringBuffer15.iterator();
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    boolean b24 = ringBuffer19.isEmpty();
-    int i25 = ringBuffer19.size();
-    java.util.Iterator iterator26 = ringBuffer19.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    boolean b33 = ringBuffer28.isEmpty();
-    int i34 = ringBuffer28.size();
-    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer28);
-    java.util.Spliterator spliterator37 = ringBuffer28.spliterator();
-    boolean b38 = ringBuffer28.isEmpty();
-    ringBuffer15.enqueue((java.lang.Object)b38);
-    java.util.Spliterator spliterator40 = ringBuffer15.spliterator();
-    exercise03.RingBuffer ringBuffer42 = new exercise03.RingBuffer(1);
-    boolean b43 = ringBuffer42.isEmpty();
-    java.util.Spliterator spliterator44 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator45 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator46 = ringBuffer42.spliterator();
-    java.util.Iterator iterator47 = ringBuffer42.iterator();
-    int i48 = ringBuffer42.size();
-    java.util.Iterator iterator49 = ringBuffer42.iterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer42);
-    java.util.function.Consumer consumer51 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer42.forEach(consumer51);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i25 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i34 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b43 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i48 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator49);
-
-  }
-
-  @Test
-  public void test451() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test451"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    int i14 = ringBuffer9.size();
-    boolean b15 = ringBuffer9.isEmpty();
-    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(10);
-    ringBuffer17.enqueue((java.lang.Object)'#');
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer17);
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    boolean b23 = ringBuffer22.isEmpty();
-    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
-    java.util.Iterator iterator26 = ringBuffer22.iterator();
-    boolean b27 = ringBuffer22.isEmpty();
-    java.util.Iterator iterator28 = ringBuffer22.iterator();
-    exercise03.RingBuffer ringBuffer30 = new exercise03.RingBuffer(1);
-    boolean b31 = ringBuffer30.isEmpty();
-    java.util.Spliterator spliterator32 = ringBuffer30.spliterator();
-    java.util.Spliterator spliterator33 = ringBuffer30.spliterator();
-    java.util.Spliterator spliterator34 = ringBuffer30.spliterator();
-    java.util.Iterator iterator35 = ringBuffer30.iterator();
-    int i36 = ringBuffer30.size();
-    ringBuffer22.enqueue((java.lang.Object)ringBuffer30);
-    java.util.Iterator iterator38 = ringBuffer30.iterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.enqueue((java.lang.Object)iterator38);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i14 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b31 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i36 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator38);
-
-  }
-
-  @Test
-  public void test452() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test452"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(1);
-    ringBuffer7.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator10 = ringBuffer7.spliterator();
-    int i11 = ringBuffer7.size();
-    java.util.Spliterator spliterator12 = ringBuffer7.spliterator();
-    java.util.Iterator iterator13 = ringBuffer7.iterator();
-    java.util.Spliterator spliterator14 = ringBuffer7.spliterator();
-    java.util.Iterator iterator15 = ringBuffer7.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator15);
-    exercise03.RingBuffer ringBuffer18 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(1);
-    boolean b21 = ringBuffer20.isEmpty();
-    java.util.Spliterator spliterator22 = ringBuffer20.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer20.spliterator();
-    java.util.Iterator iterator24 = ringBuffer20.iterator();
-    boolean b25 = ringBuffer20.isEmpty();
-    java.util.Iterator iterator26 = ringBuffer20.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    boolean b33 = ringBuffer28.isEmpty();
-    int i34 = ringBuffer28.size();
-    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
-    ringBuffer20.enqueue((java.lang.Object)spliterator35);
-    ringBuffer18.enqueue((java.lang.Object)ringBuffer20);
-    exercise03.RingBuffer ringBuffer39 = new exercise03.RingBuffer(1);
-    boolean b40 = ringBuffer39.isEmpty();
-    java.util.Spliterator spliterator41 = ringBuffer39.spliterator();
-    java.util.Spliterator spliterator42 = ringBuffer39.spliterator();
-    java.util.Iterator iterator43 = ringBuffer39.iterator();
-    java.util.Iterator iterator44 = ringBuffer39.iterator();
-    java.util.Spliterator spliterator45 = ringBuffer39.spliterator();
-    java.util.Iterator iterator46 = ringBuffer39.iterator();
-    boolean b47 = ringBuffer39.isEmpty();
-    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
-    ringBuffer49.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
-    int i53 = ringBuffer49.size();
-    java.util.Spliterator spliterator54 = ringBuffer49.spliterator();
-    java.util.Iterator iterator55 = ringBuffer49.iterator();
-    java.util.Spliterator spliterator56 = ringBuffer49.spliterator();
-    java.util.Iterator iterator57 = ringBuffer49.iterator();
-    int i58 = ringBuffer49.size();
-    ringBuffer39.enqueue((java.lang.Object)ringBuffer49);
-    java.lang.Object obj60 = ringBuffer39.dequeue();
-    java.util.Iterator iterator61 = ringBuffer39.iterator();
-    ringBuffer18.enqueue((java.lang.Object)iterator61);
-    java.lang.Object obj63 = ringBuffer18.dequeue();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer18);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i34 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b40 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator41);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b47 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i53 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator55);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator56);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator57);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i58 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj60);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator61);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj63);
-
-  }
-
-  @Test
-  public void test453() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test453"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.util.Spliterator spliterator19 = ringBuffer10.spliterator();
-    java.util.Iterator iterator20 = ringBuffer10.iterator();
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    ringBuffer22.enqueue((java.lang.Object)'a');
-    java.util.Iterator iterator25 = ringBuffer22.iterator();
-    java.lang.Object obj26 = ringBuffer22.dequeue();
-    java.util.Iterator iterator27 = ringBuffer22.iterator();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj26 + "' != '" + 'a'+ "'", obj26.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator27);
-
-  }
-
-  @Test
-  public void test454() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test454"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)false);
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer6 = new exercise03.RingBuffer(1);
-    ringBuffer6.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator9 = ringBuffer6.spliterator();
-    int i10 = ringBuffer6.size();
-    java.util.Iterator iterator11 = ringBuffer6.iterator();
-    int i12 = ringBuffer6.size();
-    ringBuffer1.enqueue((java.lang.Object)i12);
-    java.util.Iterator iterator14 = ringBuffer1.iterator();
-    java.lang.Object obj15 = ringBuffer1.dequeue();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj15 + "' != '" + false+ "'", obj15.equals(false));
-
-  }
-
-  @Test
-  public void test455() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test455"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b17 = ringBuffer9.isEmpty();
-    boolean b18 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator19 = ringBuffer9.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj20 = ringBuffer9.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-
-  }
-
-  @Test
-  public void test456() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test456"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator2 = ringBuffer1.iterator();
-    java.util.Iterator iterator3 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer5 = new exercise03.RingBuffer(10);
-    ringBuffer5.enqueue((java.lang.Object)false);
-    ringBuffer5.enqueue((java.lang.Object)(short)0);
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    ringBuffer11.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    int i15 = ringBuffer11.size();
-    boolean b16 = ringBuffer11.isEmpty();
-    boolean b17 = ringBuffer11.isEmpty();
-    java.util.Iterator iterator18 = ringBuffer11.iterator();
-    int i19 = ringBuffer11.size();
-    ringBuffer5.enqueue((java.lang.Object)ringBuffer11);
-    java.lang.Object obj21 = ringBuffer5.dequeue();
-    boolean b22 = ringBuffer5.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer5);
-    java.util.Iterator iterator24 = ringBuffer5.iterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj21 + "' != '" + false+ "'", obj21.equals(false));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-
-  }
-
-  @Test
-  public void test457() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test457"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    boolean b6 = ringBuffer1.isEmpty();
-    boolean b7 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    int i9 = ringBuffer1.size();
-    java.util.Iterator iterator10 = ringBuffer1.iterator();
-    int i11 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.util.Iterator iterator17 = ringBuffer13.iterator();
-    boolean b18 = ringBuffer13.isEmpty();
-    int i19 = ringBuffer13.size();
-    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    boolean b23 = ringBuffer22.isEmpty();
-    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer22.spliterator();
-    java.util.Iterator iterator27 = ringBuffer22.iterator();
-    ringBuffer13.enqueue((java.lang.Object)iterator27);
-    int i29 = ringBuffer13.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i29 == 1);
-
-  }
-
-  @Test
-  public void test458() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test458"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer9.spliterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    int i15 = ringBuffer9.size();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.lang.Object obj17 = ringBuffer1.dequeue();
-    boolean b18 = ringBuffer1.isEmpty();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj19 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-
-  }
-
-  @Test
-  public void test459() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test459"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator16 = ringBuffer15.iterator();
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
-    boolean b18 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator19 = ringBuffer9.spliterator();
-    java.util.function.Consumer consumer20 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer20);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator19);
-
-  }
-
-  @Test
-  public void test460() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test460"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    java.util.Iterator iterator12 = ringBuffer1.iterator();
-    java.util.Iterator iterator13 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(1);
-    boolean b16 = ringBuffer15.isEmpty();
-    int i17 = ringBuffer15.size();
-    ringBuffer1.enqueue((java.lang.Object)i17);
-    int i19 = ringBuffer1.size();
-    java.util.function.Consumer consumer20 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer20);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 1);
-
-  }
-
-  @Test
-  public void test461() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test461"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer7 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer7);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-
-  }
-
-  @Test
-  public void test462() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test462"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    boolean b10 = ringBuffer1.isEmpty();
-    int i11 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    ringBuffer13.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.lang.Object obj17 = ringBuffer13.dequeue();
-    java.util.Spliterator spliterator18 = ringBuffer13.spliterator();
-    boolean b19 = ringBuffer13.isEmpty();
-    int i20 = ringBuffer13.size();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    java.util.Spliterator spliterator22 = ringBuffer1.spliterator();
-    java.lang.Object obj23 = ringBuffer1.dequeue();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj17 + "' != '" + 'a'+ "'", obj17.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj23);
-
-  }
-
-  @Test
-  public void test463() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test463"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    ringBuffer3.enqueue((java.lang.Object)spliterator18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
-    int i21 = ringBuffer3.size();
-    java.util.Iterator iterator22 = ringBuffer3.iterator();
-    java.lang.Object obj23 = ringBuffer3.dequeue();
-    java.util.function.Consumer consumer24 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer3.forEach(consumer24);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i21 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj23);
-
-  }
-
-  @Test
-  public void test464() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test464"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(1);
-    boolean b11 = ringBuffer10.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer10.spliterator();
-    java.util.Spliterator spliterator13 = ringBuffer10.spliterator();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    boolean b15 = ringBuffer10.isEmpty();
-    int i16 = ringBuffer10.size();
-    java.util.Spliterator spliterator17 = ringBuffer10.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer10);
-    java.util.Iterator iterator19 = ringBuffer10.iterator();
-    boolean b20 = ringBuffer10.isEmpty();
-    boolean b21 = ringBuffer10.isEmpty();
-    boolean b22 = ringBuffer10.isEmpty();
-    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
-    boolean b25 = ringBuffer24.isEmpty();
-    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
-    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
-    java.util.Iterator iterator28 = ringBuffer24.iterator();
-    java.util.Iterator iterator29 = ringBuffer24.iterator();
-    boolean b30 = ringBuffer24.isEmpty();
-    exercise03.RingBuffer ringBuffer32 = new exercise03.RingBuffer(1);
-    boolean b33 = ringBuffer32.isEmpty();
-    java.util.Spliterator spliterator34 = ringBuffer32.spliterator();
-    java.util.Spliterator spliterator35 = ringBuffer32.spliterator();
-    ringBuffer24.enqueue((java.lang.Object)ringBuffer32);
-    boolean b37 = ringBuffer24.isEmpty();
-    java.util.Spliterator spliterator38 = ringBuffer24.spliterator();
-    java.util.Iterator iterator39 = ringBuffer24.iterator();
-    ringBuffer10.enqueue((java.lang.Object)ringBuffer24);
-    java.util.function.Consumer consumer41 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer10.forEach(consumer41);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i16 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b30 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b37 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator39);
-
-  }
-
-  @Test
-  public void test465() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test465"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    java.util.Spliterator spliterator15 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer9.spliterator();
-    int i17 = ringBuffer9.size();
-    int i18 = ringBuffer9.size();
-    ringBuffer1.enqueue((java.lang.Object)i18);
-    int i20 = ringBuffer1.size();
-    java.lang.Object obj21 = ringBuffer1.dequeue();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i20 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj21 + "' != '" + 0+ "'", obj21.equals(0));
-
-  }
-
-  @Test
-  public void test466() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test466"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Iterator iterator10 = ringBuffer1.iterator();
-    boolean b11 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj13 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-
-  }
-
-  @Test
-  public void test467() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test467"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    boolean b8 = ringBuffer1.isEmpty();
-    int i9 = ringBuffer1.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj10 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-
-  }
-
-  @Test
-  public void test468() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test468"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Iterator iterator4 = ringBuffer1.iterator();
-    int i5 = ringBuffer1.size();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-
-  }
-
-  @Test
-  public void test469() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test469"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    ringBuffer3.enqueue((java.lang.Object)spliterator18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
-    java.lang.Object obj21 = ringBuffer3.dequeue();
-    boolean b22 = ringBuffer3.isEmpty();
-    boolean b23 = ringBuffer3.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-
-  }
-
-  @Test
-  public void test470() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test470"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Spliterator spliterator17 = ringBuffer9.spliterator();
-    int i18 = ringBuffer9.size();
-    int i19 = ringBuffer9.size();
-    java.util.function.Consumer consumer20 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer20);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-
-  }
-
-  @Test
-  public void test471() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test471"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.lang.Object obj4 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.function.Consumer consumer6 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer6);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj4 + "' != '" + 'a'+ "'", obj4.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-
-  }
-
-  @Test
-  public void test472() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test472"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Iterator iterator10 = ringBuffer1.iterator();
-    boolean b11 = ringBuffer1.isEmpty();
-    int i12 = ringBuffer1.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj13 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-
-  }
-
-  @Test
-  public void test473() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test473"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b17 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    java.util.Iterator iterator24 = ringBuffer19.iterator();
-    boolean b25 = ringBuffer19.isEmpty();
-    int i26 = ringBuffer19.size();
-    boolean b27 = ringBuffer19.isEmpty();
-    java.util.Iterator iterator28 = ringBuffer19.iterator();
-    java.util.Iterator iterator29 = ringBuffer19.iterator();
-    exercise03.RingBuffer ringBuffer31 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer33 = new exercise03.RingBuffer(1);
-    boolean b34 = ringBuffer33.isEmpty();
-    java.util.Spliterator spliterator35 = ringBuffer33.spliterator();
-    java.util.Spliterator spliterator36 = ringBuffer33.spliterator();
-    java.util.Iterator iterator37 = ringBuffer33.iterator();
-    boolean b38 = ringBuffer33.isEmpty();
-    java.util.Iterator iterator39 = ringBuffer33.iterator();
-    exercise03.RingBuffer ringBuffer41 = new exercise03.RingBuffer(1);
-    boolean b42 = ringBuffer41.isEmpty();
-    java.util.Spliterator spliterator43 = ringBuffer41.spliterator();
-    java.util.Spliterator spliterator44 = ringBuffer41.spliterator();
-    java.util.Iterator iterator45 = ringBuffer41.iterator();
-    boolean b46 = ringBuffer41.isEmpty();
-    int i47 = ringBuffer41.size();
-    java.util.Spliterator spliterator48 = ringBuffer41.spliterator();
-    ringBuffer33.enqueue((java.lang.Object)spliterator48);
-    ringBuffer31.enqueue((java.lang.Object)ringBuffer33);
-    int i51 = ringBuffer33.size();
-    java.util.Iterator iterator52 = ringBuffer33.iterator();
-    ringBuffer19.enqueue((java.lang.Object)iterator52);
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)ringBuffer19);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i26 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b34 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b42 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b46 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i47 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator48);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i51 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator52);
-
-  }
-
-  @Test
-  public void test474() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test474"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer7 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer7);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-
-  }
-
-  @Test
-  public void test475() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test475"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    int i6 = ringBuffer1.size();
-    java.lang.Object obj7 = ringBuffer1.dequeue();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    ringBuffer9.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    int i13 = ringBuffer9.size();
-    boolean b14 = ringBuffer9.isEmpty();
-    boolean b15 = ringBuffer9.isEmpty();
-    boolean b16 = ringBuffer9.isEmpty();
-    boolean b17 = ringBuffer9.isEmpty();
-    int i18 = ringBuffer9.size();
-    ringBuffer1.enqueue((java.lang.Object)i18);
-    boolean b20 = ringBuffer1.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)(short)1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i6 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + '#'+ "'", obj7.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == false);
-
-  }
-
-  @Test
-  public void test476() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test476"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    boolean b10 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer11 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer11);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == false);
-
-  }
-
-  @Test
-  public void test477() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test477"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)false);
-    exercise03.RingBuffer ringBuffer5 = new exercise03.RingBuffer(1);
-    java.util.Iterator iterator6 = ringBuffer5.iterator();
-    java.util.Iterator iterator7 = ringBuffer5.iterator();
-    ringBuffer1.enqueue((java.lang.Object)iterator7);
-    exercise03.RingBuffer ringBuffer10 = new exercise03.RingBuffer(10);
-    ringBuffer10.enqueue((java.lang.Object)'#');
-    int i13 = ringBuffer10.size();
-    java.util.Iterator iterator14 = ringBuffer10.iterator();
-    int i15 = ringBuffer10.size();
-    exercise03.RingBuffer ringBuffer17 = new exercise03.RingBuffer(1);
-    ringBuffer17.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator20 = ringBuffer17.spliterator();
-    java.lang.Object obj21 = ringBuffer17.dequeue();
-    java.util.Spliterator spliterator22 = ringBuffer17.spliterator();
-    boolean b23 = ringBuffer17.isEmpty();
-    int i24 = ringBuffer17.size();
-    ringBuffer10.enqueue((java.lang.Object)i24);
-    ringBuffer1.enqueue((java.lang.Object)i24);
-    java.lang.Object obj27 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer28 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer28);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i15 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj21 + "' != '" + 'a'+ "'", obj21.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i24 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj27 + "' != '" + false+ "'", obj27.equals(false));
-
-  }
-
-  @Test
-  public void test478() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test478"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    boolean b10 = ringBuffer1.isEmpty();
-    int i11 = ringBuffer1.size();
-    java.util.Spliterator spliterator12 = ringBuffer1.spliterator();
-    int i13 = ringBuffer1.size();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-
-  }
-
-  @Test
-  public void test479() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test479"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Spliterator spliterator17 = ringBuffer9.spliterator();
-    java.util.Iterator iterator18 = ringBuffer9.iterator();
-    java.util.function.Consumer consumer19 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer19);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator18);
-
-  }
-
-  @Test
-  public void test480() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test480"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    ringBuffer3.enqueue((java.lang.Object)spliterator18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
-    java.lang.Object obj21 = ringBuffer3.dequeue();
-    boolean b22 = ringBuffer3.isEmpty();
-    java.util.function.Consumer consumer23 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer3.forEach(consumer23);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b22 == true);
-
-  }
-
-  @Test
-  public void test481() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test481"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b17 = ringBuffer9.isEmpty();
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    boolean b24 = ringBuffer19.isEmpty();
-    java.util.Iterator iterator25 = ringBuffer19.iterator();
-    exercise03.RingBuffer ringBuffer27 = new exercise03.RingBuffer(1);
-    boolean b28 = ringBuffer27.isEmpty();
-    java.util.Spliterator spliterator29 = ringBuffer27.spliterator();
-    java.util.Spliterator spliterator30 = ringBuffer27.spliterator();
-    java.util.Iterator iterator31 = ringBuffer27.iterator();
-    java.util.Iterator iterator32 = ringBuffer27.iterator();
-    boolean b33 = ringBuffer27.isEmpty();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer27);
-    boolean b35 = ringBuffer19.isEmpty();
-    java.lang.Object obj36 = ringBuffer19.dequeue();
-    boolean b37 = ringBuffer19.isEmpty();
-    exercise03.RingBuffer ringBuffer39 = new exercise03.RingBuffer(10);
-    ringBuffer39.enqueue((java.lang.Object)'#');
-    int i42 = ringBuffer39.size();
-    java.util.Iterator iterator43 = ringBuffer39.iterator();
-    java.util.Spliterator spliterator44 = ringBuffer39.spliterator();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer39);
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer19);
-    java.util.function.Consumer consumer47 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer47);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b35 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b37 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i42 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-
-  }
-
-  @Test
-  public void test482() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test482"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    java.util.Spliterator spliterator17 = ringBuffer9.spliterator();
-    java.util.function.Consumer consumer18 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer9.forEach(consumer18);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-
-  }
-
-  @Test
-  public void test483() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test483"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(10);
-    ringBuffer7.enqueue((java.lang.Object)'#');
-    int i10 = ringBuffer7.size();
-    java.util.Iterator iterator11 = ringBuffer7.iterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    ringBuffer7.enqueue((java.lang.Object)ringBuffer13);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    java.lang.Object obj18 = ringBuffer1.dequeue();
-    boolean b19 = ringBuffer1.isEmpty();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj20 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-
-  }
-
-  @Test
-  public void test484() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test484"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    ringBuffer1.enqueue((java.lang.Object)'#');
-    int i4 = ringBuffer1.size();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    int i6 = ringBuffer1.size();
-    java.lang.Object obj7 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    boolean b10 = ringBuffer1.isEmpty();
-    java.util.function.Consumer consumer11 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer11);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i4 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i6 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj7 + "' != '" + '#'+ "'", obj7.equals('#'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-
-  }
-
-  @Test
-  public void test485() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test485"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator15 = ringBuffer11.spliterator();
-    java.util.Iterator iterator16 = ringBuffer11.iterator();
-    ringBuffer8.enqueue((java.lang.Object)ringBuffer11);
-    int i18 = ringBuffer8.size();
-    int i19 = ringBuffer8.size();
-    java.util.Iterator iterator20 = ringBuffer8.iterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i18 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator20);
-
-  }
-
-  @Test
-  public void test486() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test486"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer7 = new exercise03.RingBuffer(10);
-    ringBuffer7.enqueue((java.lang.Object)'#');
-    int i10 = ringBuffer7.size();
-    java.util.Iterator iterator11 = ringBuffer7.iterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    ringBuffer7.enqueue((java.lang.Object)ringBuffer13);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    java.lang.Object obj18 = ringBuffer1.dequeue();
-    java.util.function.Consumer consumer19 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer19);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj18);
-
-  }
-
-  @Test
-  public void test487() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test487"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator16 = ringBuffer15.iterator();
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    boolean b24 = ringBuffer19.isEmpty();
-    int i25 = ringBuffer19.size();
-    java.util.Iterator iterator26 = ringBuffer19.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    boolean b33 = ringBuffer28.isEmpty();
-    int i34 = ringBuffer28.size();
-    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer28);
-    java.util.Spliterator spliterator37 = ringBuffer28.spliterator();
-    boolean b38 = ringBuffer28.isEmpty();
-    ringBuffer15.enqueue((java.lang.Object)b38);
-    java.util.Spliterator spliterator40 = ringBuffer15.spliterator();
-    exercise03.RingBuffer ringBuffer42 = new exercise03.RingBuffer(1);
-    boolean b43 = ringBuffer42.isEmpty();
-    java.util.Spliterator spliterator44 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator45 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator46 = ringBuffer42.spliterator();
-    java.util.Iterator iterator47 = ringBuffer42.iterator();
-    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
-    ringBuffer49.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
-    java.lang.Object obj53 = ringBuffer49.dequeue();
-    java.util.Spliterator spliterator54 = ringBuffer49.spliterator();
-    ringBuffer42.enqueue((java.lang.Object)spliterator54);
-    java.util.Spliterator spliterator56 = ringBuffer42.spliterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer42);
-    java.util.function.Consumer consumer58 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer15.forEach(consumer58);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i25 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i34 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b43 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj53 + "' != '" + 'a'+ "'", obj53.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator56);
-
-  }
-
-  @Test
-  public void test488() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test488"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    int i8 = ringBuffer1.size();
-    boolean b9 = ringBuffer1.isEmpty();
-    int i10 = ringBuffer1.size();
-    boolean b11 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    ringBuffer13.enqueue((java.lang.Object)'a');
-    java.lang.Object obj16 = ringBuffer13.dequeue();
-    java.util.Spliterator spliterator17 = ringBuffer13.spliterator();
-    java.lang.Object obj18 = null;
-    ringBuffer13.enqueue(obj18);
-    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
-    boolean b21 = ringBuffer13.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    java.util.Spliterator spliterator23 = ringBuffer1.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)0.0d);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b9 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b11 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj16 + "' != '" + 'a'+ "'", obj16.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-
-  }
-
-  @Test
-  public void test489() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test489"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    java.util.Iterator iterator13 = ringBuffer9.iterator();
-    java.util.Iterator iterator14 = ringBuffer9.iterator();
-    boolean b15 = ringBuffer9.isEmpty();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    boolean b17 = ringBuffer1.isEmpty();
-    java.lang.Object obj18 = ringBuffer1.dequeue();
-    boolean b19 = ringBuffer1.isEmpty();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj20 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b15 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b17 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b19 == true);
-
-  }
-
-  @Test
-  public void test490() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test490"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    int i8 = ringBuffer1.size();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(10);
-    ringBuffer11.enqueue((java.lang.Object)'#');
-    java.util.Iterator iterator14 = ringBuffer11.iterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer11);
-    java.util.function.Consumer consumer16 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer16);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator14);
-
-  }
-
-  @Test
-  public void test491() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test491"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    int i10 = ringBuffer1.size();
-    java.util.Iterator iterator11 = ringBuffer1.iterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.util.Iterator iterator17 = ringBuffer13.iterator();
-    boolean b18 = ringBuffer13.isEmpty();
-    int i19 = ringBuffer13.size();
-    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    boolean b23 = ringBuffer22.isEmpty();
-    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer22.spliterator();
-    java.util.Iterator iterator27 = ringBuffer22.iterator();
-    ringBuffer13.enqueue((java.lang.Object)iterator27);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer13);
-    boolean b30 = ringBuffer13.isEmpty();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b30 == false);
-
-  }
-
-  @Test
-  public void test492() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test492"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(10);
-    exercise03.RingBuffer ringBuffer3 = new exercise03.RingBuffer(1);
-    boolean b4 = ringBuffer3.isEmpty();
-    java.util.Spliterator spliterator5 = ringBuffer3.spliterator();
-    java.util.Spliterator spliterator6 = ringBuffer3.spliterator();
-    java.util.Iterator iterator7 = ringBuffer3.iterator();
-    boolean b8 = ringBuffer3.isEmpty();
-    java.util.Iterator iterator9 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    ringBuffer3.enqueue((java.lang.Object)spliterator18);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer3);
-    java.util.Iterator iterator21 = ringBuffer3.iterator();
-    java.util.Iterator iterator22 = ringBuffer3.iterator();
-    exercise03.RingBuffer ringBuffer24 = new exercise03.RingBuffer(1);
-    boolean b25 = ringBuffer24.isEmpty();
-    java.util.Spliterator spliterator26 = ringBuffer24.spliterator();
-    java.util.Spliterator spliterator27 = ringBuffer24.spliterator();
-    java.util.Iterator iterator28 = ringBuffer24.iterator();
-    boolean b29 = ringBuffer24.isEmpty();
-    java.util.Iterator iterator30 = ringBuffer24.iterator();
-    exercise03.RingBuffer ringBuffer32 = new exercise03.RingBuffer(1);
-    boolean b33 = ringBuffer32.isEmpty();
-    java.util.Spliterator spliterator34 = ringBuffer32.spliterator();
-    java.util.Spliterator spliterator35 = ringBuffer32.spliterator();
-    java.util.Iterator iterator36 = ringBuffer32.iterator();
-    boolean b37 = ringBuffer32.isEmpty();
-    int i38 = ringBuffer32.size();
-    java.util.Spliterator spliterator39 = ringBuffer32.spliterator();
-    ringBuffer24.enqueue((java.lang.Object)spliterator39);
-    int i41 = ringBuffer24.size();
-    java.lang.Object obj42 = ringBuffer24.dequeue();
-    int i43 = ringBuffer24.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer3.enqueue((java.lang.Object)i43);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b8 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b25 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b37 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i38 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i41 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(obj42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i43 == 0);
-
-  }
-
-  @Test
-  public void test493() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test493"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    int i7 = ringBuffer1.size();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator9 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    exercise03.RingBuffer ringBuffer13 = new exercise03.RingBuffer(1);
-    boolean b14 = ringBuffer13.isEmpty();
-    java.util.Spliterator spliterator15 = ringBuffer13.spliterator();
-    java.util.Spliterator spliterator16 = ringBuffer13.spliterator();
-    java.util.Iterator iterator17 = ringBuffer13.iterator();
-    boolean b18 = ringBuffer13.isEmpty();
-    int i19 = ringBuffer13.size();
-    java.util.Spliterator spliterator20 = ringBuffer13.spliterator();
-    exercise03.RingBuffer ringBuffer22 = new exercise03.RingBuffer(1);
-    boolean b23 = ringBuffer22.isEmpty();
-    java.util.Spliterator spliterator24 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator25 = ringBuffer22.spliterator();
-    java.util.Spliterator spliterator26 = ringBuffer22.spliterator();
-    java.util.Iterator iterator27 = ringBuffer22.iterator();
-    ringBuffer13.enqueue((java.lang.Object)iterator27);
-    ringBuffer1.enqueue((java.lang.Object)iterator27);
-    java.util.function.Consumer consumer30 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer30);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b14 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b18 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i19 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b23 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator27);
-
-  }
-
-  @Test
-  public void test494() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test494"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator5 = ringBuffer1.spliterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    int i7 = ringBuffer1.size();
-    int i8 = ringBuffer1.size();
-    int i9 = ringBuffer1.size();
-    int i10 = ringBuffer1.size();
-    int i11 = ringBuffer1.size();
-    int i12 = ringBuffer1.size();
-    int i13 = ringBuffer1.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj14 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i7 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i8 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i10 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i11 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i12 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i13 == 0);
-
-  }
-
-  @Test
-  public void test495() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test495"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer9 = new exercise03.RingBuffer(1);
-    boolean b10 = ringBuffer9.isEmpty();
-    java.util.Spliterator spliterator11 = ringBuffer9.spliterator();
-    java.util.Spliterator spliterator12 = ringBuffer9.spliterator();
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer9);
-    exercise03.RingBuffer ringBuffer15 = new exercise03.RingBuffer(10);
-    java.util.Iterator iterator16 = ringBuffer15.iterator();
-    ringBuffer9.enqueue((java.lang.Object)ringBuffer15);
-    exercise03.RingBuffer ringBuffer19 = new exercise03.RingBuffer(1);
-    boolean b20 = ringBuffer19.isEmpty();
-    java.util.Spliterator spliterator21 = ringBuffer19.spliterator();
-    java.util.Spliterator spliterator22 = ringBuffer19.spliterator();
-    java.util.Iterator iterator23 = ringBuffer19.iterator();
-    boolean b24 = ringBuffer19.isEmpty();
-    int i25 = ringBuffer19.size();
-    java.util.Iterator iterator26 = ringBuffer19.iterator();
-    exercise03.RingBuffer ringBuffer28 = new exercise03.RingBuffer(1);
-    boolean b29 = ringBuffer28.isEmpty();
-    java.util.Spliterator spliterator30 = ringBuffer28.spliterator();
-    java.util.Spliterator spliterator31 = ringBuffer28.spliterator();
-    java.util.Iterator iterator32 = ringBuffer28.iterator();
-    boolean b33 = ringBuffer28.isEmpty();
-    int i34 = ringBuffer28.size();
-    java.util.Spliterator spliterator35 = ringBuffer28.spliterator();
-    ringBuffer19.enqueue((java.lang.Object)ringBuffer28);
-    java.util.Spliterator spliterator37 = ringBuffer28.spliterator();
-    boolean b38 = ringBuffer28.isEmpty();
-    ringBuffer15.enqueue((java.lang.Object)b38);
-    java.util.Spliterator spliterator40 = ringBuffer15.spliterator();
-    exercise03.RingBuffer ringBuffer42 = new exercise03.RingBuffer(1);
-    boolean b43 = ringBuffer42.isEmpty();
-    java.util.Spliterator spliterator44 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator45 = ringBuffer42.spliterator();
-    java.util.Spliterator spliterator46 = ringBuffer42.spliterator();
-    java.util.Iterator iterator47 = ringBuffer42.iterator();
-    exercise03.RingBuffer ringBuffer49 = new exercise03.RingBuffer(1);
-    ringBuffer49.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator52 = ringBuffer49.spliterator();
-    java.lang.Object obj53 = ringBuffer49.dequeue();
-    java.util.Spliterator spliterator54 = ringBuffer49.spliterator();
-    ringBuffer42.enqueue((java.lang.Object)spliterator54);
-    java.util.Spliterator spliterator56 = ringBuffer42.spliterator();
-    ringBuffer15.enqueue((java.lang.Object)ringBuffer42);
-    java.util.Iterator iterator58 = ringBuffer42.iterator();
-    java.util.function.Consumer consumer59 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer42.forEach(consumer59);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b10 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b20 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b24 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i25 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b29 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b33 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i34 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b38 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b43 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator44);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj53 + "' != '" + 'a'+ "'", obj53.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator56);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator58);
-
-  }
-
-  @Test
-  public void test496() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test496"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    boolean b4 = ringBuffer1.isEmpty();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    boolean b7 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b4 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b7 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-
-  }
-
-  @Test
-  public void test497() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test497"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    int i5 = ringBuffer1.size();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.Iterator iterator7 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    exercise03.RingBuffer ringBuffer11 = new exercise03.RingBuffer(1);
-    boolean b12 = ringBuffer11.isEmpty();
-    java.util.Spliterator spliterator13 = ringBuffer11.spliterator();
-    java.util.Spliterator spliterator14 = ringBuffer11.spliterator();
-    java.util.Iterator iterator15 = ringBuffer11.iterator();
-    boolean b16 = ringBuffer11.isEmpty();
-    int i17 = ringBuffer11.size();
-    java.util.Spliterator spliterator18 = ringBuffer11.spliterator();
-    exercise03.RingBuffer ringBuffer20 = new exercise03.RingBuffer(1);
-    boolean b21 = ringBuffer20.isEmpty();
-    java.util.Spliterator spliterator22 = ringBuffer20.spliterator();
-    java.util.Spliterator spliterator23 = ringBuffer20.spliterator();
-    java.util.Spliterator spliterator24 = ringBuffer20.spliterator();
-    java.util.Iterator iterator25 = ringBuffer20.iterator();
-    ringBuffer11.enqueue((java.lang.Object)iterator25);
-    boolean b27 = ringBuffer11.isEmpty();
-    boolean b28 = ringBuffer11.isEmpty();
-    int i29 = ringBuffer11.size();
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.enqueue((java.lang.Object)i29);
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i5 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b12 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b16 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i17 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b21 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b27 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b28 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i29 == 1);
-
-  }
-
-  @Test
-  public void test498() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test498"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    java.util.Iterator iterator6 = ringBuffer1.iterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator8 = ringBuffer1.spliterator();
-    int i9 = ringBuffer1.size();
-    java.util.Spliterator spliterator10 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator11 = ringBuffer1.spliterator();
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj12 = ringBuffer1.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(i9 == 0);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator11);
-
-  }
-
-  @Test
-  public void test499() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test499"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    boolean b2 = ringBuffer1.isEmpty();
-    java.util.Spliterator spliterator3 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.util.Iterator iterator5 = ringBuffer1.iterator();
-    boolean b6 = ringBuffer1.isEmpty();
-    exercise03.RingBuffer ringBuffer8 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)ringBuffer8);
-    // The following exception was thrown during execution in test generation
-    try {
-      java.lang.Object obj10 = ringBuffer8.dequeue();
-      org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException");
-    } catch (exercise03.RingBufferException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("exercise03.RingBufferException")) {
-        org.junit.Assert.fail("Expected exception of type exercise03.RingBufferException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b2 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator5);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue(b6 == true);
-
-  }
-
-  @Test
-  public void test500() throws Throwable {
-
-    if (debug) { System.out.format("%n%s%n","RegressionTest0.test500"); }
-
-
-    exercise03.RingBuffer ringBuffer1 = new exercise03.RingBuffer(1);
-    ringBuffer1.enqueue((java.lang.Object)'a');
-    java.util.Spliterator spliterator4 = ringBuffer1.spliterator();
-    java.lang.Object obj5 = ringBuffer1.dequeue();
-    java.util.Spliterator spliterator6 = ringBuffer1.spliterator();
-    java.util.Spliterator spliterator7 = ringBuffer1.spliterator();
-    java.util.Iterator iterator8 = ringBuffer1.iterator();
-    java.util.function.Consumer consumer9 = null;
-    // The following exception was thrown during execution in test generation
-    try {
-      ringBuffer1.forEach(consumer9);
-      org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException");
-    } catch (java.lang.NullPointerException e) {
-      // Expected exception.
-      if (! e.getClass().getCanonicalName().equals("java.lang.NullPointerException")) {
-        org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException, got " + e.getClass().getCanonicalName());
-      }
-    }
-    
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertTrue("'" + obj5 + "' != '" + 'a'+ "'", obj5.equals('a'));
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(spliterator7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    org.junit.Assert.assertNotNull(iterator8);
 
   }
 
